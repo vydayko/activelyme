@@ -1,0 +1,46 @@
+.aboutUs .containerTitle {
+  margin-top: 80px; }
+
+.aboutUs .aboutUsTopInfo {
+  display: flex; }
+
+.aboutUs .aboutUsWrapper {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+  padding-bottom: 60px; }
+
+.aboutUs .aboutUsItem {
+  width: 50%; }
+
+.aboutUs .aboutUsImg {
+  object-fit: cover;
+  height: 600px; }
+
+.aboutUs .aboutUsPrev {
+  padding: 90px 40px 0px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column; }
+
+.aboutUs .aboutUsreadMore {
+  padding: 20px 0;
+  color: #297CBB;
+  text-transform: uppercase;
+  cursor: pointer; }
+
+.aboutUs .hiddenAboutText {
+  display: none; }
+
+.aboutUs .aboutUsMoreWrapper {
+  display: none; }
+
+.aboutUs .aboutUsMore {
+  display: flex;
+  flex-direction: column;
+  padding: 60px 40px 0; }
+
+.aboutUs .hiddenTextTitle {
+  font-size: 30px;
+  padding-bottom: 15px; }

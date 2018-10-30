@@ -1,0 +1,50 @@
+.tourСards {
+  .container {
+    margin-top: -80px;
+    .cardsList {
+      .tourСards {
+        .tourWrapper{
+          border-radius: 4px;
+          height: 470px;
+          padding: 40px;
+          color: #fff;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .topTourWrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+          }
+          .bottomInfo {
+            display: flex;
+            flex-direction: column;
+          }
+
+          .price {
+            font-size: 26px;
+          }
+
+        }
+        &:nth-child(1) {
+          .tourWrapper {
+            background: url('../../assets/images/mountain1.jpg')no-repeat center center;
+            background-size: cover;
+          }
+        }
+        &:nth-child(2) {
+          .tourWrapper {
+            background: url('../../assets/images/mountain2.jpg')no-repeat center center;
+            background-size: cover;
+          }
+        }
+        &:nth-child(3) {
+          .tourWrapper {
+            background: url('../../assets/images/mountain3.jpg')no-repeat center center;
+            background-size: cover;
+          }
+        }
+      }
+    }
+  }
+}

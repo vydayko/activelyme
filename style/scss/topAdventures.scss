@@ -1,0 +1,129 @@
+/****** Style Star Rating Widget *****/
+
+.rating {
+    border: none;
+    float: left;
+}
+
+.rating>input {
+    display: none;
+}
+
+.rating>label:before {
+    margin: 5px;
+    font-size: 1.25em;
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+}
+
+.rating>.half:before {
+    content: "\f089";
+    position: absolute;
+}
+
+.rating>label {
+    color: #ddd;
+    float: right;
+}
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating>input:checked~label,
+/* show gold star when clicked */
+
+.rating:not(:checked)>label:hover,
+/* hover current star */
+
+.rating:not(:checked)>label:hover~label {
+    color: #FFD700;
+}
+
+/* hover previous stars in list */
+
+.rating>input:checked+label:hover,
+/* hover current star when changing rating */
+
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+/* lighten current selection */
+
+.rating>input:checked~label:hover~label {
+    color: #FFED85;
+}
+
+.popularAdv {
+  .containerTitle{
+    margin-top: 80px;
+  }
+  .popularAdventures {
+    .topWrapper {
+      color: #fff;
+      font-size: 18px;
+      padding: 10px;
+      height: 180px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .bottomWrapper {
+      height: 96px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      .tourType {
+        padding: 0;
+      }
+      .tourCity {
+        font-size: 20px;
+        padding: 0;
+      }
+      .tourLocation {
+        background: url(../../assets/images/location_pin_blk.svg) no-repeat 0px center;
+        background-size: 18px;
+      }
+      .ratingLocation {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .rate {
+        .rating{
+          font-size: 12px;
+          label {
+            margin: 0
+          }
+        }
+      }
+    }
+    .wrapperHellper {
+      box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+      border-radius: 4px;
+    }
+    .tAWrapper {
+      &:nth-child(1) {
+        .topWrapper {
+          background: url('../../assets/images/mountain1.jpg')no-repeat center center;
+          background-size: cover;
+        }
+      }
+      &:nth-child(2) {
+        .topWrapper {
+          background: url('../../assets/images/mountain2.jpg')no-repeat center center;
+          background-size: cover;
+        }
+      }
+      &:nth-child(3) {
+        .topWrapper {
+          background: url('../../assets/images/mountain3.jpg')no-repeat center center;
+          background-size: cover;
+        }
+      }
+      &:nth-child(4) {
+        .topWrapper {
+          background: url('../../assets/images/mountain1.jpg')no-repeat center center;
+          background-size: cover;
+        }
+      }
+    }
+  }
+}

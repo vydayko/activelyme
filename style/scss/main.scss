@@ -1,0 +1,342 @@
+@import "header.scss";
+@import "topSlider.scss";
+@import "cards.scss";
+@import "slidersNews.scss";
+@import "topAdventures.scss";
+@import "aboutUs.scss";
+@import "subscribe.scss";
+@import "footer.scss";
+@import "jquery.nselect.sass";
+@import "customModal.scss";
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
+// reset plugin style
+.daterangepicker .calendar-table td {
+    height: 30px;
+}
+
+.daterangepicker td.in-range {
+    background-color: #feeded;
+}
+
+.daterangepicker td.active {
+    background-color: #fd4d4f;
+}
+
+.daterangepicker td.start-date {
+  border-top-left-radius: 50%;
+  border-top-right-radius: 0%;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 50%;
+}
+
+.daterangepicker td.end-date {
+  border-top-left-radius: 0;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 0;
+}
+
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+    background-color: #feeded;
+}
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+    background-color: #fd2c2e;
+}
+
+.table-condensed thead tr:nth-child(2) {
+  color: rgb(154, 154, 154);
+}
+
+.daterangepicker .calendar-table .prev span {
+  border: none;
+  background: url('../../assets/images/Arrow_Left.svg')no-repeat center center;
+  background-size: 100%;
+  width: 20px;
+  transform: none;
+  height: 12px;
+}
+
+.daterangepicker .calendar-table .next span {
+  border: none;
+  background: url('../../assets/images/Arrow_Right_blk.svg')no-repeat center center;
+  background-size: 100%;
+  width: 20px;
+  transform: none;
+  height: 12px;
+}
+// end reset plugin style
+
+.tourType {
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+}
+.tourCity {
+  font-size: 30px;
+  padding-bottom: 5px;
+}
+.tourLocation {
+  background: url('../../assets/images/location_pin.svg')no-repeat 0px center;
+  background-size: 18px;
+  font-size: 16px;
+  padding-left: 26px;
+  margin-bottom: 5px;
+}
+
+.containerTitle {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 46px;
+  align-items: center;
+  a {
+    color: #666;
+    font-size: 15px;
+    padding-right: 52px;
+    background: url("../../assets/images/Arrow_Right_blk.svg")no-repeat 90px center;
+    background-size: 20px;
+  }
+}
+
+.like {
+  background: url('../../assets/images/like_outline.svg')no-repeat center center;
+  background-size: 100%;
+  display: block;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  &:hover{
+    background: url('../../assets/images/like_solid.svg')no-repeat center center;
+    background-size: 100%;
+  }
+}
+
+.activeLike {
+  background: url('../../assets/images/like_solid.svg')no-repeat center center;
+  background-size: 100%;
+}
+
+#menuToggle {
+  display: block;
+  position: relative;
+  z-index: 1;
+  -webkit-user-select: none;
+  user-select: none;
+  span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+  }
+}
+
+#menu {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;  
+  padding: 20px;
+  transition: 0.5s;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  position: fixed;
+  .closeMenu {
+    position: absolute;
+    top: 8px;
+    right: 35px;
+    font-size: 40px;
+  }
+  #singUpModalMb {
+    width: 190px;
+  }
+  a {
+    color: #666;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  li {
+    padding: 10px 0;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .topNewsOfWeek .sliderImg {
+    min-width: 500px;
+    max-width: 500px; }
+  .popularAdv .popularAdventures .bottomWrapper .ratingLocation {
+    flex-direction: column; }
+  .popularAdv .popularAdventures .bottomWrapper {
+    height: auto; }
+  .topNewsOfWeek .sliderNewsDots {
+    left: 230px; } }
+
+@media (max-width: 991.98px) {
+  header nav {
+    margin: 0;
+    margin-right: -115px; } 
+    .slider .searchPanel .searchApply .arrow {
+      display: none;
+    }
+    .slider .searchPanel .individual .dropdown {
+      padding-right: 60px;
+    }
+    .topNewsOfWeek .sliderItemsWrapper {
+      display: block;
+      height: auto;
+    }
+    .topNewsOfWeek .sliderImg {
+      min-width: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      max-height: 500px
+    }
+    .topNewsOfWeek .sliders {
+      height: auto;
+    }
+    .topNewsOfWeek .sliderImg img {
+      width: 100%;
+      height: 300px;
+    }
+    .topNewsOfWeek .sliderNewsDots {
+      top: 266px;
+      left: 50%;
+      margin-left: -36px;
+    }
+}
+
+@media (max-width: 767.98px) {
+  header nav {
+    display: none;
+  }
+  header .hamburger {
+    display: block;
+    position: absolute;
+    right: 145px;
+    top: 25px;
+  }
+  header ul {
+    display: none;
+  }
+  .slider .sliderTitle {
+    font-size: 30px;
+    margin: 40px 0;
+  }
+  .slider {
+    height: 500px;
+    background-size: 150%;
+    background-repeat: no-repeat;
+  }
+  .slider .searchPanel {
+    height: auto;
+    flex-direction: column;
+  }
+  .slider .searchPanel .searchItemWrapper {
+    width: 100%;
+  }
+  .slider .searchPanel .date::before {
+    display: none;
+  }
+
+  .slider .searchPanel .date::after {
+    display: none;
+  }
+  .slider .searchPanel .individual .dropdown {
+    padding-right: 387px;
+  }
+  .cardsList .tourСards  {
+    margin-bottom: 20px;
+  }
+  .popularAdv .containerTitle {
+    margin-top: 40px;
+  }
+  .containerTitle {
+    font-size: 25px;
+  }
+  .popularAdventures .tAWrapper {
+    margin-bottom: 20px;
+  }
+  .popularAdv .popularAdventures .bottomWrapper .ratingLocation {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .popularAdv .popularAdventures .bottomWrapper .ratingLocation {
+    flex-direction: row;
+  }
+  .topNewsOfWeek .sliderNewsDots {
+    left: 50%;
+  }
+  .topNewsOfWeek .sliderImg .imgTag {
+    bottom: 30px;
+  }
+  .slider {
+    background-size: 200%;
+  }
+  .aboutUs .aboutUsImg {
+    object-fit: cover;
+    width: 100%;
+    height: 350px;
+  }
+  .aboutUs .aboutUsTopInfo {
+    flex-direction: column;
+  }
+  .aboutUs .aboutUsItem {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+  }
+  .aboutUs .aboutUsMoreWrapper {
+    flex-direction: column;
+  }
+  .aboutUs .aboutUsMore {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .subscribeWrapper {
+    margin-top: 40px;
+    padding: 10px;
+    min-height: auto;
+  }
+  .subscribeWrapper .subscribeForm {
+    margin-top: 10px;
+  }
+  .subscribeWrapper .subscribeEmail {
+    width: auto;
+  }
+  footer .container {
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding: 20px;
+    text-align: center;
+  }
+  .slider .searchPanel .individual .dropdown {
+    padding-right: 220px;
+  }
+}

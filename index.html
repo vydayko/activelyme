@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+    <link rel="stylesheet" href="./style/css/main.css">
+  </head>
+  <body>
+
+    <header>
+        <div class="container">
+            <span class="logo"></span>
+            <nav>
+                <a href="#">Become a Guide</a>
+                <a href="#">Blog</a>
+            </nav>
+            <ul>
+                <li data-toggle="modal" data-target="#loginModal">Login</li>
+                <li data-toggle="modal" data-target="#singUpModal" class="btn btn-outline-danger">Sing-Up</li>
+            </ul>
+            <nav class="hamburger" role="navigation">
+              <div id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            </nav>
+            <ul id="menu">
+              <span class="closeMenu">&times;</span>
+              <a href="#">Become a Guide</a>
+              <a href="#">Blog</a>
+              <li data-toggle="modal" data-target="#loginModal">Login</li>
+              <li id="singUpModalMb" data-toggle="modal" data-target="#singUpModal" class="btn btn-outline-danger">Sing-Up</li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal modalCustom fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="inputsWrapper">
+                        <label for="userEmail">
+                            Email Address*
+                        </label>
+                        <input placeholder="Email" id="userEmail" type="email">
+                    </div>
+                    <div class="inputsWrapper">
+                        <label for="userPsw">
+                            Password*
+                        </label>
+                        <input placeholder="Password" id="userPsw" type="password">
+                    </div>
+                    <div class="wrapperRemForgot">
+                        <span>
+                          <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="remeberMe">
+                              <label class="custom-control-label" for="remeberMe">Remember me</label>
+                        </div>
+                        </span> 
+                        <a href="#" class="forgotPass">Forgot a Password?</a> 
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger login">Login</button>
+                    <span class="m-15">Or use your social account to Log In</span>
+                    <div class="buttonSocial">
+                        <button type="button" class="btn btn-outline-primary SocialFb">
+                            <span class="FacebookIcBg"></span>
+                            Facebook
+                        </button> 
+                        <button type="button" class="btn btn-outline-danger SocialGo">
+                            <span class="GoogleIcBg"></span>
+                            Google
+                        </button>
+                    </div>
+                    <span class="regSingUp">Dont have an Account yet? <a href="#">Sign Up!</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="modal modalCustom fade" id="singUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"> Sign Up</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="inputsWrapper">
+                        <label for="userEmail">
+                            First Name*
+                        </label>
+                        <input placeholder="First name" id="userFN" type="text">
+                    </div>
+                    <div class="inputsWrapper">
+                        <label for="userEmail">
+                            Last Name*
+                        </label>
+                        <input placeholder="Last name" id="userLN" type="text">
+                    </div>
+                    <div class="inputsWrapper">
+                        <label for="userPsw">
+                            Password*
+                        </label>
+                        <input placeholder="Password" id="userPsw" type="password">
+                    </div>
+                    <div class="wrapperRemForgot">
+                        <span>
+                          <div class="custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="Licens">
+                              <label class="custom-control-label" for="Licens">I ‘d like to recieve emails from ActivelyMe</label>
+                        </div>
+                        </span> 
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger login">Login</button>
+                    <span class="m-15">Or use your social account to Log In</span>
+                    <div class="buttonSocial">
+                        <button type="button" class="btn btn-outline-primary SocialFb">
+                            <span class="FacebookIcBg"></span>
+                            Facebook
+                        </button> 
+                        <button type="button" class="btn btn-outline-danger SocialGo">
+                            <span class="GoogleIcBg"></span>
+                            Google
+                        </button>
+                    </div>
+                    <span class="regSingUp">Dont have an Account yet? <a href="#">Log In!</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    
+    <div class="slider">
+      <div class="container">
+        <div class="sliderTitle">
+          Find your Adventure!
+        </div>
+        <div class="searchPanel">
+          <div class="location searchItemWrapper">
+              <span class="searchIcon locationIcon"></span>
+              <select class="selectLocation" name="state" data-title="Location">
+                  <option value="AL">Alabama</option>
+                  <option value="WY">Wyoming</option>
+              </select>
+          </div>
+          <div class="date searchItemWrapper">
+              <span class="searchIcon calendarIcon"></span>
+              <input type="text" class="dataAdventure" name="datefilter" placeholder="When?" value="When?" />
+          </div>
+          <div class="individual searchItemWrapper">
+              <span class="searchIcon userIcon"></span>
+              <div class="dropdown individualDropdown">
+                <button type="button" class="dropdownMenuButton" id="dropdownMenuButton">
+                    Individual
+                </button>
+                <div class="dropDownMenu">
+                  <div class="individualWrapper">
+                      <span class="individualCheck">Individual</span>
+                        <div class="inputWrapper">
+                            <input class="individuslInput" id="dn" type="checkbox">
+                            <label class="toggle" for="dn">
+                                <span class="toggle--handler"></span>
+                            </label>
+                        </div>
+                      <span class="groupCheck">Group</span>
+                  </div>
+                  <div class="qntWrapper">
+                      <p class="persone"><span class="personeQt">1</span> Person</p>
+                      <div class="personeBtnWrapper">
+                        <span class="personeBtn personeMinuse">-</span>
+                        <span class="personeBtn personePlus">+</span>
+                      </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="searchApply searchItemWrapper">
+              <div class="dropdown">Find Your Adventure</div>
+              <span class="arrow"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tourСards">
+      <div class="container">
+        <ul class="cardsList row">
+          <li class="tourСards col-md-4">
+            <div class="tourWrapper">
+              <div class="topTourWrapper">
+                <span class="price">$750</span>
+                <span class="like"></span>
+              </div>
+              <div class="bottomInfo">
+                <span class="tourType">walking</span>
+                <span class="tourCity">Padum-Lamayuru</span>
+                <span class="tourLocation">India</span>
+              </div>
+            </div>
+          </li>
+          <li class="tourСards col-md-4">
+            <div class="tourWrapper">
+              <div class="topTourWrapper">
+                <span class="price">$750</span>
+                <span class="like"></span>
+              </div>
+              <div class="bottomInfo">
+                <span class="tourType">walking</span>
+                <span class="tourCity">Darcha Padum</span>
+                <span class="tourLocation">India</span>
+              </div>
+            </div>
+          </li>
+          <li class="tourСards col-md-4">
+            <div class="tourWrapper">
+              <div class="topTourWrapper">
+                <span class="price">$750</span>
+                <span class="like"></span>
+              </div>
+              <div class="bottomInfo">
+                <span class="tourType">walking</span>
+                <span class="tourCity">Padum-Shade-Padum</span>
+                <span class="tourLocation">India</span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="topNewsOfWeek">
+      <div class="container">
+        <div class="containerTitle">
+          <span>Top of This Week</span>
+          <a href="#">View all</a>
+        </div>
+        <div class="sliders">
+            <div class="sliderItems">
+              <div class="sliderItemsWrapper">
+                <div class="sliderImg">
+                  <img src="./assets/images/mountain1.jpg" alt="">
+                  <span class="imgTag">Image by ActivelyMe, CC Attribution</span>
+                </div>
+                <div class="sliderDesc">
+                  <span class="tourType">walking</span>
+                  <span class="tourCity">Padum-Lamayuru</span>
+                  <span class="tourLocation">India</span>
+                  <span class="desc">This classic trek explores most of the heartland of Zanskar and covers some spectacular scenery. This itinerary includes visits to almost four of the oldest and most remote Monasteries in Ladakh and Zanskar.</span>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="sliderItems">
+              <div class="sliderItemsWrapper">
+                <div class="sliderImg">
+                  <img src="./assets/images/mountain2.jpg" alt="">
+                  <span class="imgTag">Image by ActivelyMe, CC Attribution</span>
+                </div>
+                <div class="sliderDesc">
+                  <span class="tourType">walking</span>
+                  <span class="tourCity">Padum-Lamayuru</span>
+                  <span class="tourLocation">India</span>
+                  <span class="desc">This classic trek explores most of the heartland of Zanskar and covers some spectacular scenery. This itinerary includes visits to almost four of the oldest and most remote Monasteries in Ladakh and Zanskar.</span>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+            <div class="sliderItems">
+              <div class="sliderItemsWrapper">
+                <div class="sliderImg">
+                  <img src="./assets/images/mountain3.jpg" alt="">
+                  <span class="imgTag">Image by ActivelyMe, CC Attribution</span>
+                </div>
+                <div class="sliderDesc">
+                  <span class="tourType">walking</span>
+                  <span class="tourCity">Padum-Lamayuru</span>
+                  <span class="tourLocation">India</span>
+                  <span class="desc">This classic trek explores most of the heartland of Zanskar and covers some spectacular scenery. This itinerary includes visits to almost four of the oldest and most remote Monasteries in Ladakh and Zanskar.</span>
+                  <a href="#">Read more</a>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popularAdv">
+      <div class="container">
+        <div class="containerTitle">
+          <span>Popular Adventures</span>
+          <a href="#">View all</a>
+        </div>
+        <ul class="popularAdventures row">
+          <li class="tAWrapper col-md-3">
+            <div class="wrapperHellper">
+              <div class="topWrapper">
+                <span class="price">$750</span>
+                <span class="like"></span>
+              </div>
+              <div class="bottomWrapper">
+                <span class="tourType">walking</span>
+                <span class="tourCity">Padum-Lamayuru</span>
+                <span class="ratingLocation">
+                  <span class="tourLocation">India</span>
+                  <span class="rate">
+                    <fieldset class="rating">
+                      <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                      <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                      <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                      <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                      <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                      <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                      <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                      <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                      <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                      <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="tAWrapper col-md-3">
+            <div class="wrapperHellper">
+              <div class="topWrapper">
+                <span class="price">$750</span>
+                <span class="like"></span>
+              </div>
+              <div class="bottomWrapper">
+                <span class="tourType">walking</span>
+                <span class="tourCity">Padum-Lamayuru</span>
+                <span class="ratingLocation">
+                  <span class="tourLocation">India</span>
+                  <span class="rate">
+                    <fieldset class="rating">
+                      <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                      <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                      <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                      <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                      <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                      <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                      <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                      <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                      <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                      <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="tAWrapper col-md-3">
+            <div class="wrapperHellper">
+              <div class="topWrapper">
+                <span class="price">$750</span>
+                <span class="like activeLike"></span>
+              </div>
+              <div class="bottomWrapper">
+                <span class="tourType">walking</span>
+                <span class="tourCity">Padum-Lamayuru</span>
+                <span class="ratingLocation">
+                  <span class="tourLocation">India</span>
+                  <span class="rate">
+                    <fieldset class="rating">
+                      <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                      <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                      <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                      <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                      <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                      <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                      <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                      <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                      <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                      <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+          <li class="tAWrapper col-md-3">
+            <div class="wrapperHellper">
+              <div class="topWrapper">
+                <span class="price">$750</span>
+                <span class="like"></span>
+              </div>
+              <div class="bottomWrapper">
+                <span class="tourType">walking</span>
+                <span class="tourCity">Padum-Lamayuru</span>
+                <span class="ratingLocation">
+                  <span class="tourLocation">India</span>
+                  <span class="rate">
+                    <fieldset class="rating">
+                      <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                      <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                      <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label>
+                      <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
+                      <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label>
+                      <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                      <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                      <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                      <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                      <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                    </fieldset>
+                  </span>
+                </span>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="aboutUs">
+      <div class="container">
+        <div class="containerTitle">
+          <span>About Us</span>
+        </div>
+
+        <div class="aboutUsWrapper">
+          <div class="aboutUsTopInfo">
+            <img src="./assets/images/aboutus.jpg" class="aboutUsItem aboutUsImg"></img>
+            <div class="aboutUsItem aboutUsPrev">
+              Actively Me connects the adventure traveler with local guides. Actively Me was started by Atma Shetty, a technology professional and outdoor enthusiast from Seattle. During a trek in the Ladakh and Zanskar region of Northern India, he was struck by the beauty of the region and the adaptability of the local people to their remote region. People live a sustainable existence from seasonal crops and domesticated animals. They live in extreme weather, work hard and walk long distances. Adventure tourism offers them a way to continue their sustainable and rustic existence while providing them economic opportunities. Such tourism needs to be respectful of the land and its people.
+              <span class="aboutUsreadMore">Read more</span>
+              <p class="hiddenAboutText">Actively Me was started on the basis of a few guiding principles: -</p>
+            </div>
+          </div>
+          <div class="aboutUsMoreWrapper">
+            <div class="aboutUsItem aboutUsMore">
+              <span class="hiddenTextTitle">Sustainability</span>
+              <span>While there is risk of ecological damage to the pristine lands with more boots and trash, we believe in improving the economic wellbeing of the local guides and population. Adventure tourism will improve the standard of living for local guides and businesses. Most adventure tourists appreciate and respect the land. It is the collective responsibility of the adventure community to leave no trace behind. In some cases, the local themselves have to be educated on clean disposal of garbage. Reusable water bottles and compostable dishware are encouraged. We train our partners and guides on usage of eco-friendly materials and economically viable ways to dispose of the materials utilized during their trip.</span>
+            </div>
+            <div class="aboutUsItem aboutUsMore">
+              <span class="hiddenTextTitle">Transparency</span>
+              <span>We provide local guides a marketplace to connect with travelers. The guides decide the price of a trip and post the price of their trip on Actively Me. Actively Me takes a service fee of 15% off every trip for its marketing and operational expenses. All transactions are transparent to the traveler and the guide. The guides know how much and when they will be compensated. Our goal is to ensure that the majority of the trip revenue stay in the local destination. This allows the local economy to see the direct impacts of tourism revenue. We manage this by choosing guides and guide operators from the local region of adventure.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="subscribeWrapper">
+      <span class="mainTitle">Subscribe to our newsletter</span>
+      <span class="secondTitle">Sign up and we will send Inspiration directly to your inbox</span>
+      <form class="subscribeForm" action="index.html" method="post">
+        <input class="subscribeEmail" type="email" placeholder="Your Email Address">
+        <button class="subscribebtn" type="submit" name="button">Subscribe</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="container">
+        <p>Copyright © 2018 ActivelyMe. All rights reserved.</p>
+        <div class="socialWrapper">
+          <a href="#" class="social fb"></a>
+          <a href="#" class="social twt"></a>
+          <a href="#" class="social inst"></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.nselect.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="./dev/main.js"></script>
+  </body>
+</html>

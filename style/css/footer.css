@@ -1,0 +1,29 @@
+footer p {
+  margin: 0; }
+
+footer .container {
+  display: flex;
+  height: 90px;
+  align-items: center;
+  justify-content: space-between; }
+
+footer .socialWrapper {
+  display: flex;
+  align-items: center; }
+
+footer .social {
+  width: 30px;
+  height: 30px;
+  margin: 0 7px; }
+
+footer .fb {
+  background: url("../../assets/images/fb.png") no-repeat center center;
+  background-size: 100%; }
+
+footer .twt {
+  background: url("../../assets/images/tw.png") no-repeat center center;
+  background-size: 100%; }
+
+footer .inst {
+  background: url("../../assets/images/inst.png") no-repeat center center;
+  background-size: 100%; }

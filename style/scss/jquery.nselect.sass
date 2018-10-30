@@ -1,0 +1,191 @@
+$tFast: .15s
+$tSlow: .3s
+
+$cBlue: #afceff
+$cOrange: #f2a621
+
+// Выпадающий список в селекте
+.nselect
+    position: relative
+    box-sizing: border-box
+    display: inline-block
+    vertical-align: middle
+    margin-top: 5px
+    &:after
+        width: 100%
+        height: 100%
+        position: absolute
+        content: ''
+        left: 0
+        top: 0
+        display: none
+
+    &._active
+        .nselect__inner
+            opacity: 1
+            visibility: visible
+
+    &._top
+        .nselect__inner
+            top: inherit
+            bottom: 45px
+
+    &._disabled
+        &:after
+            display: block
+
+        .nselect__head
+            cursor: default
+
+    .nselect__head
+        margin: 0
+        font-weight: normal
+        cursor: pointer
+        position: relative
+        display: inline-block
+        box-sizing: border-box
+        overflow: hidden
+        user-select: none
+
+        SPAN
+            display: block
+            overflow: hidden
+
+    .nselect__inner
+        position: absolute
+        top: 45px
+        left: 0
+        width: 190px
+        max-height: 330px
+        z-index: 15
+        box-sizing: border-box
+        margin: 0
+        opacity: 0
+        visibility: hidden
+        will-change: transform, opacity, visibility
+
+    .nselect__list
+        max-height: 280px
+        overflow: hidden
+        margin: 0
+
+        LI
+            padding: 0
+            margin: 0
+            list-style: none
+
+            &._hide
+                display: none
+
+            SPAN
+                display: block
+                cursor: pointer
+
+// Orange theme
+.nselect.nsOrange
+    color: #fff
+    font-size: 14px
+    width: 80%
+
+    &._active
+        .nselect__head
+            border-color: transparent
+
+            &:after
+                transform: rotate(180deg)
+
+        .nselect__inner
+            opacity: 1
+            visibility: visible
+            transform: translateY(0)
+
+    &._top
+        .nselect__inner
+            top: inherit
+            bottom: 45px
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2)
+            transform: translateY(10px)
+
+            &:before
+                top: inherit
+                bottom: -6px
+                border-width: 6px 6px 0 6px
+                border-color: #ffffff transparent transparent transparent
+
+    &._disabled
+        .nselect__head
+            color: #909090
+            background: #E6E6E6
+
+            &:after
+                border-color: #909090 transparent transparent transparent
+
+    &._checked
+        .nselect__head
+            background: #fff
+            color: #000
+
+            &:after
+                border-color: #fff transparent transparent transparent
+
+    .nselect__head
+        font-size: 15px
+        background: none
+        border-radius: 2px
+        color: #000
+        width: 100%
+
+    .nselect__inner
+        text-align: left
+        top: 50px
+        left: -50px
+        z-index: 15
+        width: 278px
+        max-height: 330px
+        box-sizing: border-box
+        background: #fff
+        margin: 0
+        box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.2)
+        border-radius: 3px
+        transform: translateY(-10px)
+        opacity: 0
+        visibility: hidden
+        transition: opacity $tSlow, visibility $tSlow, transform $tSlow
+
+        &:before
+            content: ''
+            position: absolute
+            top: -6px
+            margin-left: 130px
+            width: 0px
+            height: 0px
+            border-style: solid
+            border-width: 0 6px 6px 6px
+            border-color: transparent transparent #ffffff transparent
+
+    .nselect__list
+        max-height: 280px
+        overflow: hidden
+        padding: 10px 0
+
+        LI
+            padding: 0
+            margin: 0
+            list-style: none
+
+            &._active
+                SPAN
+                    color: #000
+
+            &:last-child
+                SPAN
+                    border-color: transparent
+
+            SPAN
+                padding: 7px 20px
+                color: #000
+                border-bottom: 1px solid #f4f4f4
+
+                &:hover
+                    color: rgb(253, 78, 80)
+                    background: rgb(254, 237, 237)
