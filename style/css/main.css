@@ -117,7 +117,7 @@ header {
       display: block; }
     .slider .searchPanel .locationIcon {
       background: url("../../assets/images/location_pin_blk.svg") no-repeat center center;
-      background-size: 65%; }
+      background-size: 40%; }
     .slider .searchPanel .calendarIcon {
       background: url("../../assets/images/calendar.svg") no-repeat center center;
       background-size: 40%; }
