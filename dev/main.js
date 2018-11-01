@@ -16,6 +16,7 @@ $(document).ready(function () {
     elements.$closeMenu = $('.closeMenu');
     elements.$menuToggle = $('#menuToggle');
     elements.$menu = $('#menu');
+    elements.$starWrapper = $('.starWrapper');
     elements.$body = $('body');
 
     var personeQt = 1;
@@ -74,6 +75,19 @@ $(document).ready(function () {
         elements.$menu.css('display', 'none');
     }
 
+    function checkStar(e) {
+        var allElements = $(this).find('.fa');
+        allElements.each(function (i, el) {
+            $(el).removeClass('checked');
+        });
+        var star = $(e.target).data('id');
+        allElements.each(function (i, el) {
+            if (i <= star) {
+                $(el).addClass('checked');
+            }
+        });
+    }
+
     // init lb
     elements.$selectLocation.nSelect();
 
@@ -107,4 +121,6 @@ $(document).ready(function () {
 
     elements.$menuToggle.on('click', showMobileMenu);
     elements.$closeMenu.on('click', hideMobileMenu);
+
+    elements.$starWrapper.on('click', checkStar);
 });
