@@ -27,7 +27,8 @@ header {
     padding: 0; }
     header ul li {
       color: #666;
-      margin: 0 10px; }
+      margin: 0 10px;
+      cursor: pointer; }
 
 .slider {
   height: 500px;
@@ -115,7 +116,7 @@ header {
       height: 60px;
       display: block; }
     .slider .searchPanel .locationIcon {
-      background: url("../../assets/images/location_pin.svg") no-repeat center center;
+      background: url("../../assets/images/location_pin_blk.svg") no-repeat center center;
       background-size: 65%; }
     .slider .searchPanel .calendarIcon {
       background: url("../../assets/images/calendar.svg") no-repeat center center;
@@ -276,7 +277,7 @@ header {
       height: 100%; }
     .topNewsOfWeek .sliderImg .imgTag {
       position: absolute;
-      bottom: 15px;
+      bottom: 30px;
       left: 30px;
       color: #fff;
       font-size: 14px; }
@@ -428,7 +429,8 @@ header {
   cursor: pointer; }
 
 .aboutUs .hiddenAboutText {
-  display: none; }
+  display: none;
+  padding-top: 30px; }
 
 .aboutUs .aboutUsMoreWrapper {
   display: none; }
@@ -844,6 +846,12 @@ ul {
   padding-left: 26px;
   margin-bottom: 5px; }
 
+.fa-star {
+  color: #ddd; }
+
+.checked {
+  color: orange; }
+
 .containerTitle {
   margin-bottom: 30px;
   display: flex;
@@ -854,7 +862,7 @@ ul {
     color: #666;
     font-size: 15px;
     padding-right: 52px;
-    background: url("../../assets/images/Arrow_Right_blk.svg") no-repeat 90px center;
+    background: url("../../assets/images/Arrow_Right_blk.svg") no-repeat 70px center;
     background-size: 20px; }
 
 .like {
@@ -887,6 +895,9 @@ ul {
     background: #cdcdcd;
     border-radius: 3px;
     z-index: 1; }
+
+.hamburger {
+  display: none; }
 
 #menu {
   display: none;

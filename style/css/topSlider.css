@@ -84,7 +84,7 @@
       height: 60px;
       display: block; }
     .slider .searchPanel .locationIcon {
-      background: url("../../assets/images/location_pin.svg") no-repeat center center;
+      background: url("../../assets/images/location_pin_blk.svg") no-repeat center center;
       background-size: 65%; }
     .slider .searchPanel .calendarIcon {
       background: url("../../assets/images/calendar.svg") no-repeat center center;

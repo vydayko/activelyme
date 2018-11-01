@@ -31,7 +31,8 @@
   cursor: pointer; }
 
 .aboutUs .hiddenAboutText {
-  display: none; }
+  display: none;
+  padding-top: 30px; }
 
 .aboutUs .aboutUsMoreWrapper {
   display: none; }

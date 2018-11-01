@@ -94,6 +94,13 @@ ul {
   margin-bottom: 5px;
 }
 
+.fa-star {
+    color: #ddd;
+}
+.checked {
+    color: orange;
+}
+
 .containerTitle {
   margin-bottom: 30px;
   display: flex;
@@ -104,7 +111,7 @@ ul {
     color: #666;
     font-size: 15px;
     padding-right: 52px;
-    background: url("../../assets/images/Arrow_Right_blk.svg")no-repeat 90px center;
+    background: url("../../assets/images/Arrow_Right_blk.svg")no-repeat 70px center;
     background-size: 20px;
   }
 }
@@ -143,6 +150,9 @@ ul {
     border-radius: 3px;
     z-index: 1;
   }
+}
+.hamburger {
+    display: none;
 }
 
 #menu {

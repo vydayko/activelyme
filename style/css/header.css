@@ -26,4 +26,5 @@ header {
     padding: 0; }
     header ul li {
       color: #666;
-      margin: 0 10px; }
+      margin: 0 10px;
+      cursor: pointer; }
