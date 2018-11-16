@@ -3,17 +3,12 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title></title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" rel="stylesheet">
+    <title>ActivelyMe</title>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/solid.css" integrity="sha384-uKQOWcYZKOuKmpYpvT0xCFAs/wE157X5Ua3H5onoRAOCNkJAMX/6QF0iXGGQV9cP" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/regular.css" integrity="sha384-OEIzojYBMrmz48aIjVQj7VG38613/sxpP58OW9h5zBYC7biGFlv9tyu5kWmaAYlF" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/brands.css" integrity="sha384-BCEeiNUiLzxxoeYaIu7jJqq0aVVz2O2Ig4WbWEmRQ2Dx/AAxNV1wMDBXyyrxw1Zd" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/fontawesome.css" integrity="sha384-HU5rcgG/yUrsDGWsVACclYdzdCcn5yU8V/3V84zSrPDHwZEdjykadlgI6RHrxGrJ" crossorigin="anonymous">
     <link rel="stylesheet" href="./style/css/main.css">
   </head>
   <body>
@@ -29,29 +24,29 @@
                 <li data-toggle="modal" data-target="#loginModal">Login</li>
                 <li data-toggle="modal" data-target="#singUpModal" class="btn btn-outline-danger">Sing-Up</li>
             </ul>
-            <nav class="hamburger" role="navigation">
+            <nav class="hamburger">
               <div id="menuToggle">
                 <span></span>
                 <span></span>
                 <span></span>
               </div>
             </nav>
-            <ul id="menu">
+            <div id="menu">
               <span class="closeMenu">&times;</span>
               <a href="#">Become a Guide</a>
               <a href="#">Blog</a>
               <li data-toggle="modal" data-target="#loginModal">Login</li>
               <li id="singUpModalMb" data-toggle="modal" data-target="#singUpModal" class="btn btn-outline-danger">Sing-Up</li>
-            </ul>
+            </div>
         </div>
     </header>
 
     <!-- Modal -->
-    <div class="modal modalCustom fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal modalCustom fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+                    <h5 class="modal-title">Login</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -70,12 +65,12 @@
                         <input placeholder="Password" id="userPsw" type="password">
                     </div>
                     <div class="wrapperRemForgot">
-                        <span>
+                        <div>
                           <div class="custom-control custom-checkbox">
-                              <input type="checkbox" class="custom-control-input" id="remeberMe">
-                              <label class="custom-control-label" for="remeberMe">Remember me</label>
-                        </div>
-                        </span> 
+                                <input type="checkbox" class="custom-control-input" id="remeberMe">
+                                <label class="custom-control-label" for="remeberMe">Remember me</label>
+                          </div>
+                        </div> 
                         <a href="#" class="forgotPass">Forgot a Password?</a> 
                     </div>
                 </div>
@@ -98,11 +93,11 @@
         </div>
     </div>
 
-     <div class="modal modalCustom fade" id="singUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+     <div class="modal modalCustom fade" id="singUpModal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"> Sign Up</h5>
+                    <h5 class="modal-title"> Sign Up</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -121,18 +116,18 @@
                         <input placeholder="Last name" id="userLN" type="text">
                     </div>
                     <div class="inputsWrapper">
-                        <label for="userPsw">
+                        <label for="userPswd">
                             Password*
                         </label>
-                        <input placeholder="Password" id="userPsw" type="password">
+                        <input placeholder="Password" id="userPswd" type="password">
                     </div>
                     <div class="wrapperRemForgot">
-                        <span>
+                        <div>
                           <div class="custom-control custom-checkbox">
                               <input type="checkbox" class="custom-control-input" id="Licens">
                               <label class="custom-control-label" for="Licens">I ‘d like to recieve emails from ActivelyMe</label>
-                        </div>
-                        </span> 
+                          </div>
+                        </div> 
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -327,7 +322,7 @@
                 <span class="tourCity">Padum-Lamayuru</span>
                 <span class="ratingLocation">
                   <span class="tourLocation">India</span>
-                  <span class="rate">
+                  <div class="rate">
                     <div class="starWrapper">
                         <span data-id="0" class="fa fa-star"></span>
                         <span data-id="1" class="fa fa-star"></span>
@@ -335,7 +330,7 @@
                         <span data-id="3" class="fa fa-star"></span>
                         <span data-id="4" class="fa fa-star"></span>
                     </div>
-                  </span>
+                  </div>
                 </span>
               </div>
             </div>
@@ -351,7 +346,7 @@
                 <span class="tourCity">Padum-Lamayuru</span>
                 <span class="ratingLocation">
                   <span class="tourLocation">India</span>
-                  <span class="rate">
+                  <div class="rate">
                     <div class="starWrapper">
                         <span data-id="0" class="fa fa-star"></span>
                         <span data-id="1" class="fa fa-star"></span>
@@ -359,7 +354,7 @@
                         <span data-id="3" class="fa fa-star"></span>
                         <span data-id="4" class="fa fa-star"></span>
                     </div>
-                  </span>
+                  </div>
                 </span>
               </div>
             </div>
@@ -375,7 +370,7 @@
                 <span class="tourCity">Padum-Lamayuru</span>
                 <span class="ratingLocation">
                   <span class="tourLocation">India</span>
-                  <span class="rate">
+                  <div class="rate">
                     <div class="starWrapper">
                         <span data-id="0" class="fa fa-star"></span>
                         <span data-id="1" class="fa fa-star"></span>
@@ -383,7 +378,7 @@
                         <span data-id="3" class="fa fa-star"></span>
                         <span data-id="4" class="fa fa-star"></span>
                     </div>
-                  </span>
+                  </div>
                 </span>
               </div>
             </div>
@@ -399,7 +394,7 @@
                 <span class="tourCity">Padum-Lamayuru</span>
                 <span class="ratingLocation">
                   <span class="tourLocation">India</span>
-                  <span class="rate">
+                  <div class="rate">
                     <div class="starWrapper">
                         <span data-id="0" class="fa fa-star"></span>
                         <span data-id="1" class="fa fa-star"></span>
@@ -407,7 +402,7 @@
                         <span data-id="3" class="fa fa-star"></span>
                         <span data-id="4" class="fa fa-star"></span>
                     </div>
-                  </span>
+                  </div>
                 </span>
               </div>
             </div>
@@ -424,7 +419,7 @@
 
         <div class="aboutUsWrapper">
           <div class="aboutUsTopInfo">
-            <img src="./assets/images/aboutus.jpg" class="aboutUsItem aboutUsImg"></img>
+            <img src="./assets/images/aboutus.png" alt="assets/images/aboutus" class="aboutUsItem aboutUsImg">
             <div class="aboutUsItem aboutUsPrev">
               Actively Me connects the adventure traveler with local guides. Actively Me was started by Atma Shetty, a technology professional and outdoor enthusiast from Seattle. During a trek in the Ladakh and Zanskar region of Northern India, he was struck by the beauty of the region and the adaptability of the local people to their remote region. People live a sustainable existence from seasonal crops and domesticated animals. They live in extreme weather, work hard and walk long distances. Adventure tourism offers them a way to continue their sustainable and rustic existence while providing them economic opportunities. Such tourism needs to be respectful of the land and its people.
               <span class="aboutUsreadMore">Read more</span>
@@ -468,10 +463,10 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
-    <script type="text/javascript" src="./js/jquery.nselect.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript" src="./dev/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="./js/jquery.nselect.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./dev/main.js"></script>
   </body>
 </html>

@@ -3,7 +3,7 @@
   position: absolute;
   right: -15px;
   top: 4px;
-  outline: none; }
+  outline: #FD4D4F; }
 
 .modal-header .close {
   padding: 0; }
@@ -21,11 +21,11 @@
   border: 2px solid #666666;
   border-radius: .25rem;
   background: none;
-  outline: none; }
+  outline: #FD4D4F; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #fd4d4f;
-  outline: none;
+  outline: #FD4D4F;
   border: none; }
 
 .modal-footer {
@@ -94,7 +94,7 @@
       border-radius: 4px;
       background-color: #FFFFFF;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-      outline: none;
+      outline: #FD4D4F;
       height: 44px;
       padding: 0 16px; }
   .modalCustom .wrapperRemForgot {

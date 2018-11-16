@@ -11,10 +11,12 @@
   .slider .sliderTitle {
     font-size: 50px;
     color: #fff;
-    margin: 80px 0; }
+    margin: 80px 0;
+    font-weight: 900; }
   .slider .searchPanel {
     width: 100%;
     font-size: 15px;
+    font-weight: 300;
     background: #fff;
     height: 60px;
     display: flex;
@@ -45,7 +47,7 @@
       width: 25%; }
     .slider .searchPanel .date .dataAdventure {
       border: none;
-      outline: none;
+      outline: #FD4D4F;
       height: 60px;
       width: 80%; }
     .slider .searchPanel .date::before {
@@ -65,7 +67,7 @@
       padding: 17px 0px;
       background: none;
       border: none;
-      outline: none; }
+      outline: #FD4D4F; }
     .slider .searchPanel .searchApply {
       height: 60px;
       border-radius: 0 4px 4px 0;
@@ -91,7 +93,7 @@
       background-size: 40%; }
     .slider .searchPanel .userIcon {
       background: url("../../assets/images/user.svg") no-repeat center center;
-      background-size: 36%; }
+      background-size: 40%; }
 
 .dropDownMenu {
   display: none;

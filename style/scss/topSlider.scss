@@ -15,10 +15,12 @@
         font-size: 50px;
         color: #fff;
         margin: 80px 0;
+        font-weight: 900;
     }
     .searchPanel {
         width: 100%;
         font-size: 15px;
+        font-weight: 300;
         background: #fff;
         height: 60px;
         display: flex;
@@ -57,7 +59,7 @@
         .date {
             .dataAdventure {
                 border: none;
-                outline: none;
+                outline: #FD4D4F;
                 height: 60px;
                 width: 80%;
             }
@@ -83,7 +85,7 @@
             padding: 17px 0px;
             background: none;
             border: none;
-            outline: none;
+            outline: #FD4D4F;
           }
         }
         .searchApply {
@@ -117,7 +119,7 @@
         }
         .userIcon {
             background: url('../../assets/images/user.svg')no-repeat center center;
-            background-size: 36%;
+            background-size: 40%;
         }
     }
 }

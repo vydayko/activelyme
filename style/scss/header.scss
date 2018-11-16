@@ -20,6 +20,12 @@ header {
       a {
         color: #666666;
         padding: 0px 20px;
+        font-size: 15px;
+        font-weight: 500;
+        &:hover {
+            color: #666666;
+            text-decoration: none;
+        }
       }
     }
     ul {

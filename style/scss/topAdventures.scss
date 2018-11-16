@@ -124,6 +124,9 @@
           background-size: cover;
         }
       }
+      &:hover {
+        box-shadow: 0px 20px 104px -12px rgba(0,0,0,0.75);
+      }
     }
   }
 }
