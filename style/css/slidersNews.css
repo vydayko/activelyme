@@ -22,7 +22,10 @@
   .topNewsOfWeek .slick-next {
     right: 44px;
     background-size: 100%;
-    background-image: url("../../assets/images/Arrow_Right_blk.svg"); }
+    background-image: url("../../assets/images/arrow_icon_long.svg");
+    background-repeat: no-repeat;
+    width: 35px;
+    background-position: center; }
   .topNewsOfWeek .sliderItemsWrapper {
     display: flex;
     height: 500px; }
@@ -59,7 +62,7 @@
     .topNewsOfWeek .sliderNewsDots li button {
       background: none;
       border: 1px solid #fff;
-      height: 14px;
+      height: 12px;
       border-radius: 50%;
       font-size: 0;
       margin: 5px; }

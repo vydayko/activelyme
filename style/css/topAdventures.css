@@ -86,3 +86,6 @@
 .popularAdv .popularAdventures .tAWrapper:nth-child(4) .topWrapper {
   background: url("../../assets/images/mountain1.jpg") no-repeat center center;
   background-size: cover; }
+
+.popularAdv .popularAdventures .tAWrapper:hover {
+  box-shadow: 0px 20px 104px -12px rgba(0, 0, 0, 0.75); }

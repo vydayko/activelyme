@@ -18,7 +18,12 @@ header {
     margin-left: -300px; }
     header nav a {
       color: #666666;
-      padding: 0px 20px; }
+      padding: 0px 20px;
+      font-size: 15px;
+      font-weight: 500; }
+      header nav a:hover {
+        color: #666666;
+        text-decoration: none; }
   header ul {
     display: flex;
     align-items: center;
@@ -43,10 +48,12 @@ header {
   .slider .sliderTitle {
     font-size: 50px;
     color: #fff;
-    margin: 80px 0; }
+    margin: 80px 0;
+    font-weight: 900; }
   .slider .searchPanel {
     width: 100%;
     font-size: 15px;
+    font-weight: 300;
     background: #fff;
     height: 60px;
     display: flex;
@@ -77,7 +84,7 @@ header {
       width: 25%; }
     .slider .searchPanel .date .dataAdventure {
       border: none;
-      outline: none;
+      outline: #FD4D4F;
       height: 60px;
       width: 80%; }
     .slider .searchPanel .date::before {
@@ -97,7 +104,7 @@ header {
       padding: 17px 0px;
       background: none;
       border: none;
-      outline: none; }
+      outline: #FD4D4F; }
     .slider .searchPanel .searchApply {
       height: 60px;
       border-radius: 0 4px 4px 0;
@@ -123,7 +130,7 @@ header {
       background-size: 40%; }
     .slider .searchPanel .userIcon {
       background: url("../../assets/images/user.svg") no-repeat center center;
-      background-size: 36%; }
+      background-size: 40%; }
 
 .dropDownMenu {
   display: none;
@@ -228,7 +235,8 @@ header {
       display: flex;
       flex-direction: column; }
     .tourСards .container .cardsList .tourСards .tourWrapper .price {
-      font-size: 26px; }
+      font-size: 26px;
+      font-weight: 500; }
   .tourСards .container .cardsList .tourСards:nth-child(1) .tourWrapper {
     background: url("../../assets/images/mountain1.jpg") no-repeat center center;
     background-size: cover; }
@@ -263,7 +271,10 @@ header {
   .topNewsOfWeek .slick-next {
     right: 44px;
     background-size: 100%;
-    background-image: url("../../assets/images/Arrow_Right_blk.svg"); }
+    background-image: url("../../assets/images/arrow_icon_long.svg");
+    background-repeat: no-repeat;
+    width: 35px;
+    background-position: center; }
   .topNewsOfWeek .sliderItemsWrapper {
     display: flex;
     height: 500px; }
@@ -300,7 +311,7 @@ header {
     .topNewsOfWeek .sliderNewsDots li button {
       background: none;
       border: 1px solid #fff;
-      height: 14px;
+      height: 12px;
       border-radius: 50%;
       font-size: 0;
       margin: 5px; }
@@ -396,6 +407,9 @@ header {
   background: url("../../assets/images/mountain1.jpg") no-repeat center center;
   background-size: cover; }
 
+.popularAdv .popularAdventures .tAWrapper:hover {
+  box-shadow: 0px 20px 104px -12px rgba(0, 0, 0, 0.75); }
+
 .aboutUs .containerTitle {
   margin-top: 80px; }
 
@@ -445,17 +459,21 @@ header {
   padding-bottom: 15px; }
 
 .subscribeWrapper {
+  font-size: 15px;
   margin-top: 80px;
   display: flex;
   flex-direction: column;
   min-height: 400px;
   align-items: center;
   justify-content: center;
-  background: url("../../assets/images/subscribe.jpg") no-repeat center center;
+  background: url("../../assets/images/subscribe.png") no-repeat center center;
   background-size: 100%; }
   .subscribeWrapper .mainTitle {
     font-size: 30px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    font-weight: 900; }
+  .subscribeWrapper .secondTitle {
+    font-weight: 300; }
   .subscribeWrapper .subscribeForm {
     display: flex;
     margin-top: 80px; }
@@ -466,6 +484,7 @@ header {
     border-bottom-left-radius: 4px;
     padding-left: 20px; }
   .subscribeWrapper .subscribebtn {
+    outline: #FD4D4F;
     height: 40px;
     border-radius: 0 4px 4px 0;
     background-color: #FD4D4F;
@@ -663,7 +682,7 @@ footer .inst {
   position: absolute;
   right: -15px;
   top: 4px;
-  outline: none; }
+  outline: #FD4D4F; }
 
 .modal-header .close {
   padding: 0; }
@@ -681,11 +700,11 @@ footer .inst {
   border: 2px solid #666666;
   border-radius: .25rem;
   background: none;
-  outline: none; }
+  outline: #FD4D4F; }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #fd4d4f;
-  outline: none;
+  outline: #FD4D4F;
   border: none; }
 
 .modal-footer {
@@ -754,7 +773,7 @@ footer .inst {
       border-radius: 4px;
       background-color: #FFFFFF;
       box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
-      outline: none;
+      outline: #FD4D4F;
       height: 44px;
       padding: 0 16px; }
   .modalCustom .wrapperRemForgot {
@@ -775,9 +794,15 @@ footer .inst {
     box-shadow: 0 5px 10px 0 rgba(253, 77, 79, 0.3);
     border: none; }
 
+@font-face {
+  font-family: 'avenir';
+  src: url("../../assets/fonts/Avenir.ttc");
+  font-weight: normal;
+  font-style: normal; }
+
 * {
-  font-family: 'Open Sans', sans-serif;
-  outline: none; }
+  font-family: 'avenir', sans-serif;
+  outline: #FD4D4F; }
 
 ul {
   padding: 0;
@@ -844,6 +869,7 @@ ul {
   background-size: 18px;
   font-size: 16px;
   padding-left: 26px;
+  font-weight: 300;
   margin-bottom: 5px; }
 
 .fa-star {
@@ -853,14 +879,17 @@ ul {
   color: orange; }
 
 .containerTitle {
-  margin-bottom: 30px;
+  font-size: 34px;
+  font-weight: 900;
   display: flex;
   justify-content: space-between;
   font-size: 46px;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 30px; }
   .containerTitle a {
     color: #666;
     font-size: 15px;
+    font-weight: 5000;
     padding-right: 52px;
     background: url("../../assets/images/Arrow_Right_blk.svg") no-repeat 70px center;
     background-size: 20px; }
@@ -869,8 +898,8 @@ ul {
   background: url("../../assets/images/like_outline.svg") no-repeat center center;
   background-size: 100%;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 45px;
+  height: 39px;
   cursor: pointer; }
   .like:hover {
     background: url("../../assets/images/like_solid.svg") no-repeat center center;

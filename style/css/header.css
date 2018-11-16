@@ -17,7 +17,12 @@ header {
     margin-left: -300px; }
     header nav a {
       color: #666666;
-      padding: 0px 20px; }
+      padding: 0px 20px;
+      font-size: 15px;
+      font-weight: 500; }
+      header nav a:hover {
+        color: #666666;
+        text-decoration: none; }
   header ul {
     display: flex;
     align-items: center;
