@@ -124,16 +124,16 @@ $(document).ready(function () {
     });
     // end init lb
 
-    elements.$personeMinuse.on('click', minusePersone);
-    elements.$personePlus.on('click', plusPersone);
+    elements.$personeMinuse.on('click touchstart', minusePersone);
+    elements.$personePlus.on('click touchstart', plusPersone);
     elements.$individuslInput.on('change', changeGroup);
 
-    elements.$body.on('click', showeHideDropDown);
-    elements.$like.on('click', toggleLike);
-    elements.$aboutUsreadMore.on('click', showMoreAboutUs);
+    elements.$body.on('click touchstart', showeHideDropDown);
+    elements.$like.on('click touchstart', toggleLike);
+    elements.$aboutUsreadMore.on('click touchstart', showMoreAboutUs);
 
-    elements.$menuToggle.on('click', showMobileMenu);
-    elements.$closeMenu.on('click', hideMobileMenu);
+    elements.$menuToggle.on('click touchstart', showMobileMenu);
+    elements.$closeMenu.on('click touchstart', hideMobileMenu);
 
-    elements.$starWrapper.on('click', checkStar);
+    elements.$starWrapper.on('click touchstart', checkStar);
 });
