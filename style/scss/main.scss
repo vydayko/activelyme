@@ -99,7 +99,7 @@ ul {
   padding-bottom: 5px;
 }
 .tourLocation {
-  background: url('../../assets/images/location_pin.svg')no-repeat 0px center;
+  background: url('../../assets/images/location_pin_card.svg')no-repeat 0px center;
   background-size: 18px;
   font-size: 16px;
   padding-left: 26px;
@@ -125,28 +125,28 @@ ul {
   a {
     color: #666;
     font-size: 15px;
-    font-weight: 5000;
+    font-weight: 500;
     padding-right: 52px;
-    background: url("../../assets/images/Arrow_Right_blk.svg")no-repeat 70px center;
-    background-size: 20px;
+    background: url("../../assets/images/title-right-arrow.svg")no-repeat 70px center;
+    background-size: 25px;
   }
 }
 
 .like {
-  background: url('../../assets/images/like_outline.svg')no-repeat center center;
+  background: url('../../assets/images/like_outline.svg')no-repeat center 2px;
   background-size: 100%;
   display: block;
   width: 45px;
   height: 39px;
   cursor: pointer;
   &:hover{
-    background: url('../../assets/images/like_solid.svg')no-repeat center center;
+    background: url('../../assets/images/like_solid.svg')no-repeat center 2px;
     background-size: 100%;
   }
 }
 
 .activeLike {
-  background: url('../../assets/images/like_solid.svg')no-repeat center center;
+  background: url('../../assets/images/like_solid.svg')no-repeat center 2px;
   background-size: 100%;
 }
 
@@ -347,6 +347,7 @@ ul {
     margin-top: 40px;
     padding: 10px;
     min-height: auto;
+    background-size: 125%;
   }
   .subscribeWrapper .subscribeForm {
     margin-top: 10px;

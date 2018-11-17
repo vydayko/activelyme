@@ -22,7 +22,9 @@
   .slick-prev {
     right: 90px;
     background-size: 100%;
-    background-image: url('../../assets/images/Arrow_Left.svg');
+    background-image: url('../../assets/images/arrow_left_icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
   }
   .slick-next {
     right: 44px;
@@ -39,9 +41,18 @@
   }
 
   .sliderImg {
+    position: relative;
     min-width: 700px;
     max-width: 700px;
     position: relative;
+    .gradientSlider {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(360deg, rgba(0,0,0,0.6) 0%, rgba(33,33,33,0) 100%);
+    }
     img {
       object-fit: cover;
       width: 100%;
@@ -66,6 +77,9 @@
     }
     .desc {
       padding-bottom: 30px;
+    }
+    a {
+      text-transform: uppercase;
     }
   }
 

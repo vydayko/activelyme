@@ -60,14 +60,24 @@
       width: 1px;
       height: 40px;
       background: #e6e6e6; }
-    .slider .searchPanel .individual .dropdown {
-      padding-right: 134px; }
-    .slider .searchPanel .individual #dropdownMenuButton {
-      width: 100%;
-      padding: 17px 0px;
-      background: none;
-      border: none;
-      outline: #FD4D4F; }
+    .slider .searchPanel .individual {
+      position: relative; }
+      .slider .searchPanel .individual .dropdown {
+        padding-right: 134px; }
+      .slider .searchPanel .individual #dropdownMenuButton {
+        width: 100%;
+        padding: 17px 0px;
+        background: none;
+        border: none;
+        outline: #FD4D4F; }
+      .slider .searchPanel .individual::after {
+        content: '';
+        width: 12px;
+        height: 6px;
+        background: url("../../assets/images/dropdown_icon.svg");
+        position: absolute;
+        top: 28px;
+        right: 20px; }
     .slider .searchPanel .searchApply {
       height: 60px;
       border-radius: 0 4px 4px 0;
@@ -100,6 +110,7 @@
   position: absolute;
   max-width: 250px;
   background: #fff;
+  z-index: 10;
   top: 70px;
   left: -28px;
   border-radius: 4px;
@@ -125,10 +136,10 @@
     display: flex;
     justify-content: space-around;
     align-items: center; }
-    .dropDownMenu .individualWrapper .individualCheck {
+    .dropDownMenu .individualWrapper .groupType {
       color: #666666;
       font-weight: 300; }
-    .dropDownMenu .individualWrapper .groupCheck {
+    .dropDownMenu .individualWrapper .active {
       color: #FD4D4F;
       font-weight: 500; }
   .dropDownMenu .qntWrapper {

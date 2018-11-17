@@ -17,13 +17,13 @@ footer .social {
   margin: 0 7px; }
 
 footer .fb {
-  background: url("../../assets/images/fb.png") no-repeat center center;
+  background: url("../../assets/images/facebook_icon.svg") no-repeat center center;
   background-size: 100%; }
 
 footer .twt {
-  background: url("../../assets/images/tw.png") no-repeat center center;
+  background: url("../../assets/images/twitter_icon.svg") no-repeat center center;
   background-size: 100%; }
 
 footer .inst {
-  background: url("../../assets/images/inst.png") no-repeat center center;
+  background: url("../../assets/images/Instagram_icon.svg") no-repeat center center;
   background-size: 100%; }

@@ -9,6 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/css/main.css">
   </head>
   <body>
@@ -175,14 +176,14 @@
                 </button>
                 <div class="dropDownMenu">
                   <div class="individualWrapper">
-                      <span class="individualCheck">Individual</span>
+                        <span class="groupType individualCheck active">Individual</span>
                         <div class="inputWrapper">
                             <input class="individuslInput" id="dn" type="checkbox">
                             <label class="toggle" for="dn">
                                 <span class="toggle--handler"></span>
                             </label>
                         </div>
-                      <span class="groupCheck">Group</span>
+                        <span class="groupType groupCheck">Group</span>
                   </div>
                   <div class="qntWrapper">
                       <p class="persone"><span class="personeQt">1</span> Person</p>
@@ -258,6 +259,7 @@
             <div class="sliderItems">
               <div class="sliderItemsWrapper">
                 <div class="sliderImg">
+                    <div class="gradientSlider"></div>
                   <img src="./assets/images/mountain1.jpg" alt="">
                   <span class="imgTag">Image by ActivelyMe, CC Attribution</span>
                 </div>
@@ -273,6 +275,7 @@
             <div class="sliderItems">
               <div class="sliderItemsWrapper">
                 <div class="sliderImg">
+                    <div class="gradientSlider"></div>
                   <img src="./assets/images/mountain2.jpg" alt="">
                   <span class="imgTag">Image by ActivelyMe, CC Attribution</span>
                 </div>
@@ -288,6 +291,7 @@
             <div class="sliderItems">
               <div class="sliderItemsWrapper">
                 <div class="sliderImg">
+                    <div class="gradientSlider"></div>
                   <img src="./assets/images/mountain3.jpg" alt="">
                   <span class="imgTag">Image by ActivelyMe, CC Attribution</span>
                 </div>
@@ -324,11 +328,18 @@
                   <span class="tourLocation">India</span>
                   <div class="rate">
                     <div class="starWrapper">
-                        <span data-id="0" class="fa fa-star"></span>
-                        <span data-id="1" class="fa fa-star"></span>
-                        <span data-id="2" class="fa fa-star"></span>
-                        <span data-id="3" class="fa fa-star"></span>
-                        <span data-id="4" class="fa fa-star"></span>
+                        <div class="wrapper">
+                          <input type="checkbox" id="st1" value="1" />
+                          <label for="st1"></label>
+                          <input type="checkbox" id="st2" value="2" />
+                          <label for="st2"></label>
+                          <input type="checkbox" id="st3" value="3" />
+                          <label for="st3"></label>
+                          <input type="checkbox" id="st4" value="4" />
+                          <label for="st4"></label>
+                          <input type="checkbox" id="st5" value="5" />
+                          <label for="st5"></label>
+                        </div>
                     </div>
                   </div>
                 </span>
@@ -348,11 +359,18 @@
                   <span class="tourLocation">India</span>
                   <div class="rate">
                     <div class="starWrapper">
-                        <span data-id="0" class="fa fa-star"></span>
-                        <span data-id="1" class="fa fa-star"></span>
-                        <span data-id="2" class="fa fa-star"></span>
-                        <span data-id="3" class="fa fa-star"></span>
-                        <span data-id="4" class="fa fa-star"></span>
+                        <div class="wrapper">
+                          <input type="checkbox" id="st12" value="1" />
+                          <label for="st12"></label>
+                          <input type="checkbox" id="st22" value="2" />
+                          <label for="st22"></label>
+                          <input type="checkbox" id="st32" value="3" />
+                          <label for="st32"></label>
+                          <input type="checkbox" id="st42" value="4" />
+                          <label for="st42"></label>
+                          <input type="checkbox" id="st52" value="5" />
+                          <label for="st52"></label>
+                        </div>
                     </div>
                   </div>
                 </span>
@@ -372,11 +390,18 @@
                   <span class="tourLocation">India</span>
                   <div class="rate">
                     <div class="starWrapper">
-                        <span data-id="0" class="fa fa-star"></span>
-                        <span data-id="1" class="fa fa-star"></span>
-                        <span data-id="2" class="fa fa-star"></span>
-                        <span data-id="3" class="fa fa-star"></span>
-                        <span data-id="4" class="fa fa-star"></span>
+                        <div class="wrapper">
+                          <input type="checkbox" id="st13" value="1" />
+                          <label for="st13"></label>
+                          <input type="checkbox" id="st23" value="2" />
+                          <label for="st23"></label>
+                          <input type="checkbox" id="st33" value="3" />
+                          <label for="st33"></label>
+                          <input type="checkbox" id="st43" value="4" />
+                          <label for="st43"></label>
+                          <input type="checkbox" id="st53" value="5" />
+                          <label for="st53"></label>
+                        </div>
                     </div>
                   </div>
                 </span>
@@ -396,11 +421,18 @@
                   <span class="tourLocation">India</span>
                   <div class="rate">
                     <div class="starWrapper">
-                        <span data-id="0" class="fa fa-star"></span>
-                        <span data-id="1" class="fa fa-star"></span>
-                        <span data-id="2" class="fa fa-star"></span>
-                        <span data-id="3" class="fa fa-star"></span>
-                        <span data-id="4" class="fa fa-star"></span>
+                        <div class="wrapper">
+                          <input type="checkbox" id="st14" value="1" />
+                          <label for="st14"></label>
+                          <input type="checkbox" id="st24" value="2" />
+                          <label for="st24"></label>
+                          <input type="checkbox" id="st34" value="3" />
+                          <label for="st34"></label>
+                          <input type="checkbox" id="st44" value="4" />
+                          <label for="st44"></label>
+                          <input type="checkbox" id="st54" value="5" />
+                          <label for="st54"></label>
+                        </div>
                     </div>
                   </div>
                 </span>
