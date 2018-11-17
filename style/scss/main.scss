@@ -312,6 +312,11 @@ ul {
 }
 
 @media (max-width: 576px) {
+    .modal-header .close {
+        padding: 0;
+        right: 30px;
+        top: 22px;
+    }
     .popularAdv .popularAdventures .bottomWrapper .ratingLocation {
         flex-direction: row;
     }

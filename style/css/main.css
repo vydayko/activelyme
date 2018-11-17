@@ -2,7 +2,7 @@
 header {
   background: #fff;
   height: 70px;
-  z-index: 9999999999;
+  z-index: 1000;
   width: 100%;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
   position: fixed;
@@ -1040,6 +1040,10 @@ ul {
     flex-direction: row; } }
 
 @media (max-width: 576px) {
+  .modal-header .close {
+    padding: 0;
+    right: 30px;
+    top: 22px; }
   .popularAdv .popularAdventures .bottomWrapper .ratingLocation {
     flex-direction: row; }
   .popularAdv .popularAdventures .tAWrapper .wrapperHellper:hover {
