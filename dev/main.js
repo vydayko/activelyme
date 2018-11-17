@@ -76,19 +76,6 @@ $(document).ready(function () {
         elements.$menu.css('display', 'none');
     }
 
-    function checkStar(e) {
-        var allElements = $(this).find('.fa');
-        allElements.each(function (i, el) {
-            $(el).removeClass('checked');
-        });
-        var star = $(e.target).data('id');
-        allElements.each(function (i, el) {
-            if (i <= star) {
-                $(el).addClass('checked');
-            }
-        });
-    }
-
     function changeGroup() {
         if ($('.individuslInput').prop('checked')) {
             $('.individualCheck').removeClass('active');
@@ -97,6 +84,17 @@ $(document).ready(function () {
             $('.individualCheck').addClass('active');
             $('.groupCheck').removeClass('active');
         }
+    }
+
+    function changeStarRating(e) {
+        var target = $(e.target).data('star');
+        var stars = $(this).find('.starItem');
+        stars.removeClass('activeStar');
+        stars.each(function (index, el) {
+            if (target >= index) {
+                $(el).addClass('activeStar');
+            }
+        });
     }
 
     // init lb
@@ -124,16 +122,16 @@ $(document).ready(function () {
     });
     // end init lb
 
-    elements.$personeMinuse.on('click touchstart', minusePersone);
-    elements.$personePlus.on('click touchstart', plusPersone);
+    elements.$personeMinuse.on('click', minusePersone);
+    elements.$personePlus.on('click', plusPersone);
     elements.$individuslInput.on('change', changeGroup);
 
-    elements.$body.on('click touchstart', showeHideDropDown);
-    elements.$like.on('click touchstart', toggleLike);
-    elements.$aboutUsreadMore.on('click touchstart', showMoreAboutUs);
+    elements.$body.on('click', showeHideDropDown);
+    elements.$like.on('click', toggleLike);
+    elements.$aboutUsreadMore.on('click', showMoreAboutUs);
 
-    elements.$menuToggle.on('click touchstart', showMobileMenu);
-    elements.$closeMenu.on('click touchstart', hideMobileMenu);
+    elements.$menuToggle.on('click', showMobileMenu);
+    elements.$closeMenu.on('click', hideMobileMenu);
 
-    elements.$starWrapper.on('click touchstart', checkStar);
+    elements.$starWrapper.on('click', changeStarRating);
 });

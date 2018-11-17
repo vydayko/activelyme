@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="31px" viewBox="0 0 30 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>91B44B69-26C2-429B-A882-33041B5A8C01</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-10.9%" y="-10.7%" width="121.9%" height="121.5%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.05 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Visitor_Homepage" transform="translate(-355.000000, -2011.000000)" fill="#F9AD25" fill-rule="nonzero">
+            <g id="Content" transform="translate(0.000000, 70.000000)">
+                <g id="Popular-Adventures" transform="translate(135.000000, 1626.000000)">
+                    <g id="card-1" filter="url(#filter-1)" transform="translate(0.000000, 76.000000)">
+                        <g id="rating" transform="translate(187.000000, 243.000000)">
+                            <g id="star_icon_active" transform="translate(42.000000, 0.000000)">
+                                <path d="M11.7291462,5.47213382 C11.9748142,5.22225422 12.061544,4.85552265 11.9555498,4.51505927 C11.8495291,4.17459589 11.5727782,3.93113126 11.2332788,3.87967326 L8.26464619,3.4295471 C8.20637588,3.42072652 8.15600213,3.38254087 8.12992756,3.32740532 L6.80232369,0.52044195 C6.65051349,0.19941703 6.34307731,0 6.00000058,0 C5.65692384,0 5.34948766,0.19941703 5.19767747,0.52044195 L3.8700736,3.32743297 C3.84397252,3.38254087 3.79362528,3.42072652 3.73532847,3.42957475 L0.766748864,3.87967326 C0.427249437,3.93113126 0.150525075,4.17459589 0.0444778767,4.51505927 C-0.0615693219,4.85552265 0.025186932,5.22225422 0.270881491,5.47213382 L2.41898648,7.65706648 C2.46114567,7.6999804 2.48041012,7.76177977 2.47044666,7.82236251 L1.9633439,10.9075198 C1.90536508,11.2603707 2.04172662,11.6102354 2.31927243,11.8206574 C2.59681825,12.0311347 2.95794049,12.0583154 3.26156088,11.891775 L5.91674213,10.4351625 C5.96889128,10.406544 6.03113637,10.406544 6.08331202,10.4351625 L8.73851976,11.891775 C8.87058854,11.9642199 9.01349522,12.0000276 9.15571294,12 C9.34040784,12 9.5239368,11.9396108 9.68072872,11.8206297 C9.95827454,11.6101801 10.0946626,11.2602878 10.0366572,10.9074922 L9.52955449,7.82233486 C9.51961753,7.76175212 9.53885548,7.69995275 9.58101468,7.65703883 L11.7291462,5.47213382 Z"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

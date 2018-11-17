@@ -145,11 +145,6 @@ ul {
     }
 }
 
-.activeLike {
-    background: url('../../assets/images/like_solid.svg')no-repeat center 2px;
-    background-size: 100%;
-}
-
 #menuToggle {
     display: block;
     position: relative;
@@ -320,6 +315,12 @@ ul {
     .popularAdv .popularAdventures .bottomWrapper .ratingLocation {
         flex-direction: row;
     }
+    .popularAdv .popularAdventures .tAWrapper .wrapperHellper:hover {
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+    }
+    .like:hover {
+        background: url(../../assets/images/like_outline.svg) no-repeat center 2px;
+    }
     .topNewsOfWeek .sliderNewsDots {
         left: 50%;
     }
@@ -379,4 +380,10 @@ ul {
     .slider .searchPanel .individual .dropdown {
         padding-right: 220px;
     }
+}
+
+
+.activeLike {
+    background: url('../../assets/images/like_solid.svg')no-repeat center 2px!important;
+    background-size: 100%;
 }
