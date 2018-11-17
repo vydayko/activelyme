@@ -1,108 +1,103 @@
-.topNewsOfWeek{
-  margin-top: 80px;
-  position: relative;
-
-  .sliders{
-    height: 500px;
-    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.05);
-    border-radius: 4px;
-  }
-
-  .slick-arrow {
-    position: absolute;
-    z-index: 999;
-    right: 0;
-    bottom: 10px;
-    border: none;
-    background: none;
-    height: 20px;
-    width: 20px;
-    font-size: 0;
-  }
-  .slick-prev {
-    right: 90px;
-    background-size: 100%;
-    background-image: url('../../assets/images/arrow_left_icon.svg');
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .slick-next {
-    right: 44px;
-    background-size: 100%;
-    background-image: url('../../assets/images/arrow_icon_long.svg');
-    background-repeat: no-repeat;
-    width: 35px;
-    background-position: center;
-  }
-
-  .sliderItemsWrapper {
-    display: flex;
-    height: 500px;
-  }
-
-  .sliderImg {
+.topNewsOfWeek {
+    margin-top: 80px;
     position: relative;
-    min-width: 700px;
-    max-width: 700px;
-    position: relative;
-    .gradientSlider {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      background: linear-gradient(360deg, rgba(0,0,0,0.6) 0%, rgba(33,33,33,0) 100%);
+    .sliders {
+        height: 500px;
+        box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
+        border-radius: 4px;
     }
-    img {
-      object-fit: cover;
-      width: 100%;
-      height: 100%;
-    }
-    .imgTag {
-      position: absolute;
-      bottom: 30px;
-      left: 30px;
-      color: #fff;
-      font-size: 14px;
-    }
-  }
-  .sliderDesc {
-    display: flex;
-    padding: 40px;
-    flex-direction: column;
-    .tourLocation {
-      background: url('../../assets/images/location_pin_blk.svg')no-repeat 0px center;
-      background-size: 18px;
-      margin-bottom: 15px;
-    }
-    .desc {
-      padding-bottom: 30px;
-    }
-    a {
-      text-transform: uppercase;
-    }
-  }
-
-  .sliderNewsDots{
-    position: absolute;
-    bottom: 40px;
-    display: flex;
-    left: 350px;
-    margin-left: -20px;
-    li {
-      button {
+    .slick-arrow {
+        position: absolute;
+        z-index: 999;
+        right: 0;
+        bottom: 10px;
+        border: none;
         background: none;
-        border: 1px solid #fff;
-        height: 12px;
-        border-radius: 50%;
+        height: 20px;
+        width: 20px;
         font-size: 0;
-        margin: 5px;
-      }
     }
-    .slick-active {
-      button {
-        background: #fff;
-      }
+    .slick-prev {
+        right: 90px;
+        background-size: 100%;
+        background-image: url('../../assets/images/arrow_left_icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
     }
-  }
+    .slick-next {
+        right: 44px;
+        background-size: 100%;
+        background-image: url('../../assets/images/arrow_icon_long.svg');
+        background-repeat: no-repeat;
+        width: 35px;
+        background-position: center;
+    }
+    .sliderItemsWrapper {
+        display: flex;
+        height: 500px;
+    }
+    .sliderImg {
+        position: relative;
+        min-width: 700px;
+        max-width: 700px;
+        position: relative;
+        .gradientSlider {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 0%, rgba(33, 33, 33, 0) 100%);
+        }
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+        .imgTag {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            color: #fff;
+            font-size: 14px;
+        }
+    }
+    .sliderDesc {
+        display: flex;
+        padding: 40px;
+        flex-direction: column;
+        .tourLocation {
+            background: url('../../assets/images/location_pin_blk.svg')no-repeat 0px center;
+            background-size: 18px;
+            margin-bottom: 15px;
+        }
+        .desc {
+            padding-bottom: 30px;
+        }
+        a {
+            text-transform: uppercase;
+        }
+    }
+    .sliderNewsDots {
+        position: absolute;
+        bottom: 40px;
+        display: flex;
+        left: 350px;
+        margin-left: -20px;
+        li {
+            button {
+                background: none;
+                border: 1px solid #fff;
+                height: 12px;
+                border-radius: 50%;
+                font-size: 0;
+                margin: 5px;
+            }
+        }
+        .slick-active {
+            button {
+                background: #fff;
+            }
+        }
+    }
 }

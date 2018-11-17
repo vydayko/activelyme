@@ -3,14 +3,13 @@
     background-image: url('../../assets/images/slider.jpg');
     background-size: 100%;
     background-position: center;
-
+    margin-top: 70px;
     .container {
         display: flex;
         align-items: center;
         flex-direction: column;
         justify-content: start;
     }
-
     .sliderTitle {
         font-size: 50px;
         color: #fff;
@@ -26,16 +25,15 @@
         display: flex;
         align-items: center;
         border-radius: 4px;
-
         .nice-select {
             font-size: 15px;
             border: none;
             padding: 0;
             width: 80%;
             &::after {
-              display: none;
+                display: none;
             }
-            .list{
+            .list {
                 width: 100%;
                 margin-top: 20px;
                 &::after {
@@ -49,7 +47,6 @@
                 }
             }
         }
-
         .searchItemWrapper {
             display: flex;
             justify-content: flex-start;
@@ -63,40 +60,40 @@
                 height: 60px;
                 width: 80%;
             }
-            &::before{
-              content: '';
-              width: 1px;
-              height: 40px;
-              background: #e6e6e6;
+            &::before {
+                content: '';
+                width: 1px;
+                height: 40px;
+                background: #e6e6e6;
             }
-            &::after{
-              content: '';
-              width: 1px;
-              height: 40px;
-              background: #e6e6e6;
+            &::after {
+                content: '';
+                width: 1px;
+                height: 40px;
+                background: #e6e6e6;
             }
         }
         .individual {
-          position: relative;
-          .dropdown {
-            padding-right: 134px;
-          }
-          #dropdownMenuButton {
-            width: 100%;
-            padding: 17px 0px;
-            background: none;
-            border: none;
-            outline: #FD4D4F;
-          }
-          &::after {
-            content: '';
-            width: 12px;
-            height: 6px;
-            background: url('../../assets/images/dropdown_icon.svg');
-            position: absolute;
-            top: 28px;
-            right: 20px;
-          }
+            position: relative;
+            .dropdown {
+                padding-right: 134px;
+            }
+            #dropdownMenuButton {
+                width: 100%;
+                padding: 17px 0px;
+                background: none;
+                border: none;
+                outline: #FD4D4F;
+            }
+            &::after {
+                content: '';
+                width: 12px;
+                height: 6px;
+                background: url('../../assets/images/dropdown_icon.svg');
+                position: absolute;
+                top: 28px;
+                right: 20px;
+            }
         }
         .searchApply {
             height: 60px;
@@ -113,7 +110,6 @@
                 margin: 3px 0 0 10px;
             }
         }
-
         .searchIcon {
             width: 50px;
             height: 60px;
@@ -146,66 +142,62 @@
     padding: 10px 25px;
     box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.14);
     &::before {
-      content: '';
-      position: absolute;
-      top: -6px;
-      margin-left: 90px;
-      width: 0px;
-      height: 0px;
-      border-style: solid;
-      border-width: 0 6px 6px 6px;
-      border-color: transparent transparent #ffffff transparent;
+        content: '';
+        position: absolute;
+        top: -6px;
+        margin-left: 90px;
+        width: 0px;
+        height: 0px;
+        border-style: solid;
+        border-width: 0 6px 6px 6px;
+        border-color: transparent transparent #ffffff transparent;
     }
-    #dn > * {
-      transform: translateZ(0) scale(1.0, 1.0);
+    #dn>* {
+        transform: translateZ(0) scale(1.0, 1.0);
     }
-
     .toggle {
         width: 100%;
     }
-
-    .inputWrapper > * {
-      cursor: pointer;
+    .inputWrapper>* {
+        cursor: pointer;
     }
-
     .individualWrapper {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      .groupType {
-        color: #666666;
-        font-weight: 300;
-      }
-      .active {
-        color: #FD4D4F;
-        font-weight: 500;
-      }
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .groupType {
+            color: #666666;
+            font-weight: 300;
+        }
+        .active {
+            color: #FD4D4F;
+            font-weight: 500;
+        }
     }
     .qntWrapper {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 20px;
-      * {
-        margin: 0;
-      }
-      .personeBtnWrapper{
         display: flex;
-      }
-      .personeBtn {
-        border: 1px solid #333333;
-        border-radius: 50%;
-        display: block;
-        width: 25px;
-        text-align: center;
-        height: 25px;
-        cursor: pointer;
-      }
-      .personeMinuse {
-        margin-right: 15px;
-        border: 1px solid #666666;
-      }
+        justify-content: space-between;
+        padding-top: 20px;
+        * {
+            margin: 0;
+        }
+        .personeBtnWrapper {
+            display: flex;
+        }
+        .personeBtn {
+            border: 1px solid #333333;
+            border-radius: 50%;
+            display: block;
+            width: 25px;
+            text-align: center;
+            height: 25px;
+            cursor: pointer;
+        }
+        .personeMinuse {
+            margin-right: 15px;
+            border: 1px solid #666666;
+        }
     }
-
     .inputWrapper {
         width: 40px;
         height: 15px;
@@ -213,25 +205,25 @@
         box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.1);
         border-radius: 75px;
         margin: 0px 10px;
-      .toggle--handler {
-        background: #e6e6e6;
-        border: 1px solid black;
-        width: 22px;
-        height: 22px;
-        display: block;
-        border-radius: 60px;
-        margin: -3px;
-        position: relative;
-        z-index: 2;
-        transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
-      }
+        .toggle--handler {
+            background: #e6e6e6;
+            border: 1px solid black;
+            width: 22px;
+            height: 22px;
+            display: block;
+            border-radius: 60px;
+            margin: -3px;
+            position: relative;
+            z-index: 2;
+            transition: all 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        }
     }
     #dn {
         position: absolute;
         left: -999em;
-        &:checked + .toggle {
+        &:checked+.toggle {
             width: 100%;
-            .toggle--handler{
+            .toggle--handler {
                 transform: translateX(24px);
                 background: #fff;
                 border: 1px solid red;

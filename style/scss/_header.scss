@@ -1,14 +1,19 @@
 header {
     background: #fff;
     height: 70px;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.15);
-    .container{
+    z-index: 100;
+    width: 100%;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    position: fixed;
+    left: 0;
+    top: 0;
+    .container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 100%;
     }
-    .logo{
+    .logo {
         background-image: url('../../assets/images/Logo.svg');
         width: 50px;
         height: 45px;
@@ -16,28 +21,28 @@ header {
         background-repeat: no-repeat;
     }
     nav {
-      margin-left: -300px;
-      a {
-        color: #666666;
-        padding: 0px 20px;
-        font-size: 15px;
-        font-weight: 500;
-        &:hover {
+        margin-left: -300px;
+        a {
             color: #666666;
-            text-decoration: none;
+            padding: 0px 20px;
+            font-size: 15px;
+            font-weight: 500;
+            &:hover {
+                color: #666666;
+                text-decoration: none;
+            }
         }
-      }
     }
     ul {
-      display: flex;
-      align-items: center;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      li {
-        color: #666;
-        margin: 0 10px;
-        cursor: pointer;
-      }
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            color: #666;
+            margin: 0 10px;
+            cursor: pointer;
+        }
     }
 }
