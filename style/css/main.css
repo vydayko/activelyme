@@ -1018,7 +1018,7 @@ ul {
     font-size: 22px;
     margin-bottom: 20px; }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1200px) {
   .topNewsOfWeek .sliderImg {
     min-width: 500px;
     max-width: 500px; }
@@ -1029,7 +1029,7 @@ ul {
   .topNewsOfWeek .sliderNewsDots {
     left: 230px; } }
 
-@media (max-width: 991.98px) {
+@media (max-width: 992px) {
   header nav {
     margin: 0;
     margin-right: -115px; }
@@ -1055,7 +1055,7 @@ ul {
     left: 50%;
     margin-left: -36px; } }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   header nav {
     display: none; }
   header .hamburger {
@@ -1094,7 +1094,7 @@ ul {
   .popularAdv .popularAdventures .bottomWrapper .ratingLocation {
     flex-direction: row; } }
 
-@media (max-width: 575.98px) {
+@media (max-width: 576px) {
   .popularAdv .popularAdventures .bottomWrapper .ratingLocation {
     flex-direction: row; }
   .topNewsOfWeek .sliderNewsDots {
