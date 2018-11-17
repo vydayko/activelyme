@@ -357,14 +357,16 @@ ul {
     .subscribeWrapper {
         margin-top: 40px;
         padding: 10px;
-        min-height: auto;
-        background-size: 125%;
-    }
-    .subscribeWrapper .subscribeForm {
-        margin-top: 10px;
-    }
-    .subscribeWrapper .subscribeEmail {
-        width: auto;
+        min-height: 250px;
+        background-size: 265%;
+
+        .subscribeForm {
+            margin-top: 10px;
+        }
+
+        .subscribeEmail {
+            width: auto;
+        }
     }
     footer .container {
         height: auto;
