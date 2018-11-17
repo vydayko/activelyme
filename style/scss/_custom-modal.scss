@@ -1,25 +1,22 @@
-.modal-header{
-	
-}
-.close {
-	font-size: 40px;
-	position: absolute;
-	right: -15px;
-	top: 4px;
-	outline: #FD4D4F;
-}
+.modal-header {}
 
+.close {
+    font-size: 40px;
+    position: absolute;
+    right: -15px;
+    top: 4px;
+    outline: #FD4D4F;
+}
 
 .modal-header .close {
-	padding: 0;
+    padding: 0;
 }
 
-
 .modal-header {
-	border-bottom: none;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .modal-body {
@@ -27,127 +24,126 @@
 }
 
 .custom-control-label {
-	&:before {
-		border: 2px solid #666666;
-		border-radius: .25rem;
-		background: none;
-		outline: #FD4D4F;
-	}
+    &:before {
+        border: 2px solid #666666;
+        border-radius: .25rem;
+        background: none;
+        outline: #FD4D4F;
+    }
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-	background-color: #fd4d4f;
+    background-color: #fd4d4f;
     outline: #FD4D4F;
     border: none;
 }
 
 .modal-footer {
-	border: none;
+    border: none;
     padding: 15px 40px 30px;
     display: flex;
     flex-direction: column;
-	color: #666666;
-	font-size: 15px
+    color: #666666;
+    font-size: 15px
 }
 
 .modal-title {
-	font-weight: 800;
+    font-weight: 800;
     font-size: 26px;
 }
 
-.modalCustom{
-	font-size: 15px;
-	.regSingUp {
-		margin-top: 10px;
-		font-weight: 300;
-		a {
-			font-weight: 500;
-			color: #FD4D4F;
-			&:hover {
-				color: #FD4D4F;
-			    text-decoration: none;
-			}
-		}
-	}
-	.FacebookIcBg {
-		background: url("../../assets/images/facebook.png")no-repeat center center;
-		background-size: 100%;
-	}
-	.GoogleIcBg {
-		background: url("../../assets/images/google.png")no-repeat center center;
-		background-size: 100%;
-	}
-	.m-15 {
-		margin: 15px 0;
-		font-weight: 300;
-	}
-	.modal-dialog {
-		max-width: 410px;
-	}
-	.buttonSocial {
-		width: 100%;
-		display: flex;
-		justify-content: space-between;
-		button {
-		    display: flex;
-		    width: 45%;
-		    align-items: center;
-		    justify-content: space-evenly;
-		    span {
-				width: 18px;
-				height: 18px;
-				display: block;
-		    }
-		    &:hover{
-		    	background: none;
-		    }
-		}
-		.btn-outline-primary:hover {
-			color: #007bff
-		}
-		.btn-outline-danger:hover {
-    		color: #dc3545 
-    	}
-	}
-	.inputsWrapper {
-		color: #333333;
-	    display: flex;
-    	flex-direction: column;
-	    padding-bottom: 20px;
-	    font-size: 15px;
-	    label {
-	    	font-weight: 500;
-	    }
-    	input {
-    		border: 1px solid #D8D8D8;	
-    		border-radius: 4px;	
-    		background-color: #FFFFFF;	
-    		box-shadow: 0 2px 4px 0 rgba(0,0,0,0.15);
-    		outline: #FD4D4F;
-    		height: 44px;
-    		padding: 0 16px;
-    	}
-	}
-	
-	.wrapperRemForgot {
-		display: flex;
-		justify-content: space-between;
-		color: #666666;
-		font-weight: 300;
-		a {
-	    	color: #666666;
-	    	&:hover {
-	    		color: #666666;
-				text-decoration: none;
-	    	}
-	    }
-	}
-	.login {
-		height: 40px;
-		width: 330px;
-		border-radius: 4px;
-		background-color: #FD4D4F;	
-		box-shadow: 0 5px 10px 0 rgba(253,77,79,0.3);
-		border: none;
-	}
+.modalCustom {
+    font-size: 15px;
+    .regSingUp {
+        margin-top: 10px;
+        font-weight: 300;
+        a {
+            font-weight: 500;
+            color: #FD4D4F;
+            &:hover {
+                color: #FD4D4F;
+                text-decoration: none;
+            }
+        }
+    }
+    .FacebookIcBg {
+        background: url("../../assets/images/facebook.png")no-repeat center center;
+        background-size: 100%;
+    }
+    .GoogleIcBg {
+        background: url("../../assets/images/google.png")no-repeat center center;
+        background-size: 100%;
+    }
+    .m-15 {
+        margin: 15px 0;
+        font-weight: 300;
+    }
+    .modal-dialog {
+        max-width: 410px;
+    }
+    .buttonSocial {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        button {
+            display: flex;
+            width: 45%;
+            align-items: center;
+            justify-content: space-evenly;
+            span {
+                width: 18px;
+                height: 18px;
+                display: block;
+            }
+            &:hover {
+                background: none;
+            }
+        }
+        .btn-outline-primary:hover {
+            color: #007bff
+        }
+        .btn-outline-danger:hover {
+            color: #dc3545
+        }
+    }
+    .inputsWrapper {
+        color: #333333;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 20px;
+        font-size: 15px;
+        label {
+            font-weight: 500;
+        }
+        input {
+            border: 1px solid #D8D8D8;
+            border-radius: 4px;
+            background-color: #FFFFFF;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+            outline: #FD4D4F;
+            height: 44px;
+            padding: 0 16px;
+        }
+    }
+    .wrapperRemForgot {
+        display: flex;
+        justify-content: space-between;
+        color: #666666;
+        font-weight: 300;
+        a {
+            color: #666666;
+            &:hover {
+                color: #666666;
+                text-decoration: none;
+            }
+        }
+    }
+    .login {
+        height: 40px;
+        width: 330px;
+        border-radius: 4px;
+        background-color: #FD4D4F;
+        box-shadow: 0 5px 10px 0 rgba(253, 77, 79, 0.3);
+        border: none;
+    }
 }

@@ -2,7 +2,12 @@
 header {
   background: #fff;
   height: 70px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15); }
+  z-index: 100;
+  width: 100%;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  position: fixed;
+  left: 0;
+  top: 0; }
   header .container {
     display: flex;
     justify-content: space-between;
@@ -39,7 +44,8 @@ header {
   height: 500px;
   background-image: url("../../assets/images/slider.jpg");
   background-size: 100%;
-  background-position: center; }
+  background-position: center;
+  margin-top: 70px; }
   .slider .container {
     display: flex;
     align-items: center;
@@ -239,7 +245,8 @@ header {
   position: relative;
   display: inline-block; }
 
-.starWrapper .content span:before, .starWrapper .content span:after {
+.starWrapper .content span:before,
+.starWrapper .content span:after {
   position: absolute;
   content: "";
   background-color: #282828;
@@ -887,10 +894,12 @@ ul {
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 0; }
 
-.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+.daterangepicker td.available:hover,
+.daterangepicker th.available:hover {
   background-color: #feeded; }
 
-.daterangepicker td.active, .daterangepicker td.active:hover {
+.daterangepicker td.active,
+.daterangepicker td.active:hover {
   background-color: #fd2c2e; }
 
 .table-condensed thead tr:nth-child(2) {
@@ -1102,7 +1111,9 @@ ul {
   .topNewsOfWeek .sliderImg .imgTag {
     bottom: 30px; }
   .slider {
-    background-size: 200%; }
+    background-size: 265%; }
+    .slider .searchPanel .userIcon {
+      min-width: 50px; }
   .aboutUs .aboutUsImg {
     object-fit: cover;
     width: 100%;
