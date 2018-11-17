@@ -18,7 +18,9 @@
   .topNewsOfWeek .slick-prev {
     right: 90px;
     background-size: 100%;
-    background-image: url("../../assets/images/Arrow_Left.svg"); }
+    background-image: url("../../assets/images/arrow_left_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
   .topNewsOfWeek .slick-next {
     right: 44px;
     background-size: 100%;
@@ -30,9 +32,17 @@
     display: flex;
     height: 500px; }
   .topNewsOfWeek .sliderImg {
+    position: relative;
     min-width: 700px;
     max-width: 700px;
     position: relative; }
+    .topNewsOfWeek .sliderImg .gradientSlider {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 0%, rgba(33, 33, 33, 0) 100%); }
     .topNewsOfWeek .sliderImg img {
       object-fit: cover;
       width: 100%;
@@ -53,6 +63,8 @@
       margin-bottom: 15px; }
     .topNewsOfWeek .sliderDesc .desc {
       padding-bottom: 30px; }
+    .topNewsOfWeek .sliderDesc a {
+      text-transform: uppercase; }
   .topNewsOfWeek .sliderNewsDots {
     position: absolute;
     bottom: 40px;

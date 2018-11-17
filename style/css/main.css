@@ -97,14 +97,24 @@ header {
       width: 1px;
       height: 40px;
       background: #e6e6e6; }
-    .slider .searchPanel .individual .dropdown {
-      padding-right: 134px; }
-    .slider .searchPanel .individual #dropdownMenuButton {
-      width: 100%;
-      padding: 17px 0px;
-      background: none;
-      border: none;
-      outline: #FD4D4F; }
+    .slider .searchPanel .individual {
+      position: relative; }
+      .slider .searchPanel .individual .dropdown {
+        padding-right: 134px; }
+      .slider .searchPanel .individual #dropdownMenuButton {
+        width: 100%;
+        padding: 17px 0px;
+        background: none;
+        border: none;
+        outline: #FD4D4F; }
+      .slider .searchPanel .individual::after {
+        content: '';
+        width: 12px;
+        height: 6px;
+        background: url("../../assets/images/dropdown_icon.svg");
+        position: absolute;
+        top: 28px;
+        right: 20px; }
     .slider .searchPanel .searchApply {
       height: 60px;
       border-radius: 0 4px 4px 0;
@@ -137,6 +147,7 @@ header {
   position: absolute;
   max-width: 250px;
   background: #fff;
+  z-index: 10;
   top: 70px;
   left: -28px;
   border-radius: 4px;
@@ -162,10 +173,10 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center; }
-    .dropDownMenu .individualWrapper .individualCheck {
+    .dropDownMenu .individualWrapper .groupType {
       color: #666666;
       font-weight: 300; }
-    .dropDownMenu .individualWrapper .groupCheck {
+    .dropDownMenu .individualWrapper .active {
       color: #FD4D4F;
       font-weight: 500; }
   .dropDownMenu .qntWrapper {
@@ -217,6 +228,77 @@ header {
         .dropDownMenu #dn:checked + .toggle .toggle--handler:after {
           opacity: 1; }
 
+.starWrapper .content {
+  text-align: center;
+  margin-top: 150px; }
+
+.starWrapper .content i {
+  color: #FFC107; }
+
+.starWrapper .content span {
+  position: relative;
+  display: inline-block; }
+
+.starWrapper .content span:before, .starWrapper .content span:after {
+  position: absolute;
+  content: "";
+  background-color: #282828;
+  width: 40px;
+  height: 2px;
+  top: 40%; }
+
+.starWrapper .content span:before {
+  left: -45px; }
+
+.starWrapper .content span:after {
+  right: -45px; }
+
+.starWrapper .content p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px; }
+
+.starWrapper .wrapper {
+  position: relative;
+  display: inline-block;
+  border: none;
+  font-size: 14px; }
+
+.starWrapper .wrapper input {
+  border: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  opacity: 0; }
+
+.starWrapper .wrapper label {
+  position: relative;
+  float: right;
+  color: #C8C8C8; }
+
+.starWrapper .wrapper label:before {
+  margin: 5px;
+  content: "\f005";
+  font-family: FontAwesome;
+  display: inline-block;
+  font-size: 14px;
+  color: #ccc;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none; }
+
+.starWrapper .wrapper input:checked ~ label:before {
+  color: #FFC107; }
+
+.starWrapper .wrapper label:hover ~ label:before {
+  color: #ffdb70; }
+
+.starWrapper .wrapper label:hover:before {
+  color: #FFC107; }
+
 .tourСards .container {
   margin-top: -80px; }
   .tourСards .container .cardsList .tourСards .tourWrapper {
@@ -224,6 +306,7 @@ header {
     height: 470px;
     padding: 40px;
     color: #fff;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
@@ -238,13 +321,13 @@ header {
       font-size: 26px;
       font-weight: 500; }
   .tourСards .container .cardsList .tourСards:nth-child(1) .tourWrapper {
-    background: url("../../assets/images/mountain1.jpg") no-repeat center center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 69%, rgba(0, 0, 0, 0.6) 100%), url("../../assets/images/mountain1.jpg") no-repeat center center;
     background-size: cover; }
   .tourСards .container .cardsList .tourСards:nth-child(2) .tourWrapper {
-    background: url("../../assets/images/mountain2.jpg") no-repeat center center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 69%, rgba(0, 0, 0, 0.6) 100%), url("../../assets/images/mountain2.jpg") no-repeat center center;
     background-size: cover; }
   .tourСards .container .cardsList .tourСards:nth-child(3) .tourWrapper {
-    background: url("../../assets/images/mountain3.jpg") no-repeat center center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 69%, rgba(0, 0, 0, 0.6) 100%), url("../../assets/images/mountain3.jpg") no-repeat center center;
     background-size: cover; }
 
 .topNewsOfWeek {
@@ -267,7 +350,9 @@ header {
   .topNewsOfWeek .slick-prev {
     right: 90px;
     background-size: 100%;
-    background-image: url("../../assets/images/Arrow_Left.svg"); }
+    background-image: url("../../assets/images/arrow_left_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center; }
   .topNewsOfWeek .slick-next {
     right: 44px;
     background-size: 100%;
@@ -279,9 +364,17 @@ header {
     display: flex;
     height: 500px; }
   .topNewsOfWeek .sliderImg {
+    position: relative;
     min-width: 700px;
     max-width: 700px;
     position: relative; }
+    .topNewsOfWeek .sliderImg .gradientSlider {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: linear-gradient(360deg, rgba(0, 0, 0, 0.6) 0%, rgba(33, 33, 33, 0) 100%); }
     .topNewsOfWeek .sliderImg img {
       object-fit: cover;
       width: 100%;
@@ -302,6 +395,8 @@ header {
       margin-bottom: 15px; }
     .topNewsOfWeek .sliderDesc .desc {
       padding-bottom: 30px; }
+    .topNewsOfWeek .sliderDesc a {
+      text-transform: uppercase; }
   .topNewsOfWeek .sliderNewsDots {
     position: absolute;
     bottom: 40px;
@@ -317,42 +412,6 @@ header {
       margin: 5px; }
     .topNewsOfWeek .sliderNewsDots .slick-active button {
       background: #fff; }
-
-/****** Style Star Rating Widget *****/
-.rating {
-  border: none;
-  float: left; }
-
-.rating > input {
-  display: none; }
-
-.rating > label:before {
-  margin: 5px;
-  font-size: 1.25em;
-  font-family: FontAwesome;
-  display: inline-block;
-  content: "\f005"; }
-
-.rating > .half:before {
-  content: "\f089";
-  position: absolute; }
-
-.rating > label {
-  color: #ddd;
-  float: right; }
-
-/***** CSS Magic to Highlight Stars on Hover *****/
-.rating > input:checked ~ label,
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-  color: #FFD700; }
-
-/* hover previous stars in list */
-.rating > input:checked + label:hover,
-.rating > input:checked ~ label:hover,
-.rating > label:hover ~ input:checked ~ label,
-.rating > input:checked ~ label:hover ~ label {
-  color: #FFED85; }
 
 .popularAdv .containerTitle {
   margin-top: 80px; }
@@ -391,24 +450,22 @@ header {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
   border-radius: 4px; }
 
-.popularAdv .popularAdventures .tAWrapper:nth-child(1) .topWrapper {
-  background: url("../../assets/images/mountain1.jpg") no-repeat center center;
-  background-size: cover; }
-
-.popularAdv .popularAdventures .tAWrapper:nth-child(2) .topWrapper {
-  background: url("../../assets/images/mountain2.jpg") no-repeat center center;
-  background-size: cover; }
-
-.popularAdv .popularAdventures .tAWrapper:nth-child(3) .topWrapper {
-  background: url("../../assets/images/mountain3.jpg") no-repeat center center;
-  background-size: cover; }
-
-.popularAdv .popularAdventures .tAWrapper:nth-child(4) .topWrapper {
-  background: url("../../assets/images/mountain1.jpg") no-repeat center center;
-  background-size: cover; }
-
-.popularAdv .popularAdventures .tAWrapper:hover {
-  box-shadow: 0px 20px 104px -12px rgba(0, 0, 0, 0.75); }
+.popularAdv .popularAdventures .tAWrapper {
+  height: 300px; }
+  .popularAdv .popularAdventures .tAWrapper:nth-child(1) .topWrapper {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 69%, rgba(0, 0, 0, 0.6) 100%), url("../../assets/images/mountain1.jpg") no-repeat center center;
+    background-size: cover; }
+  .popularAdv .popularAdventures .tAWrapper:nth-child(2) .topWrapper {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 69%, rgba(0, 0, 0, 0.6) 100%), url("../../assets/images/mountain2.jpg") no-repeat center center;
+    background-size: cover; }
+  .popularAdv .popularAdventures .tAWrapper:nth-child(3) .topWrapper {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 69%, rgba(0, 0, 0, 0.6) 100%), url("../../assets/images/mountain3.jpg") no-repeat center center;
+    background-size: cover; }
+  .popularAdv .popularAdventures .tAWrapper:nth-child(4) .topWrapper {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 69%, rgba(0, 0, 0, 0.6) 100%), url("../../assets/images/mountain1.jpg") no-repeat center center;
+    background-size: cover; }
+  .popularAdv .popularAdventures .tAWrapper .wrapperHellper:hover {
+    box-shadow: 0px 20px 104px -12px rgba(0, 0, 0, 0.75); }
 
 .aboutUs .containerTitle {
   margin-top: 80px; }
@@ -463,7 +520,7 @@ header {
   margin-top: 80px;
   display: flex;
   flex-direction: column;
-  min-height: 400px;
+  min-height: 265px;
   align-items: center;
   justify-content: center;
   background: url("../../assets/images/subscribe.png") no-repeat center center;
@@ -520,15 +577,15 @@ footer .social {
   margin: 0 7px; }
 
 footer .fb {
-  background: url("../../assets/images/fb.png") no-repeat center center;
+  background: url("../../assets/images/facebook_icon.svg") no-repeat center center;
   background-size: 100%; }
 
 footer .twt {
-  background: url("../../assets/images/tw.png") no-repeat center center;
+  background: url("../../assets/images/twitter_icon.svg") no-repeat center center;
   background-size: 100%; }
 
 footer .inst {
-  background: url("../../assets/images/inst.png") no-repeat center center;
+  background: url("../../assets/images/Instagram_icon.svg") no-repeat center center;
   background-size: 100%; }
 
 .nselect {
@@ -865,7 +922,7 @@ ul {
   padding-bottom: 5px; }
 
 .tourLocation {
-  background: url("../../assets/images/location_pin.svg") no-repeat 0px center;
+  background: url("../../assets/images/location_pin_card.svg") no-repeat 0px center;
   background-size: 18px;
   font-size: 16px;
   padding-left: 26px;
@@ -889,24 +946,24 @@ ul {
   .containerTitle a {
     color: #666;
     font-size: 15px;
-    font-weight: 5000;
+    font-weight: 500;
     padding-right: 52px;
-    background: url("../../assets/images/Arrow_Right_blk.svg") no-repeat 70px center;
-    background-size: 20px; }
+    background: url("../../assets/images/title-right-arrow.svg") no-repeat 70px center;
+    background-size: 25px; }
 
 .like {
-  background: url("../../assets/images/like_outline.svg") no-repeat center center;
+  background: url("../../assets/images/like_outline.svg") no-repeat center 2px;
   background-size: 100%;
   display: block;
   width: 45px;
   height: 39px;
   cursor: pointer; }
   .like:hover {
-    background: url("../../assets/images/like_solid.svg") no-repeat center center;
+    background: url("../../assets/images/like_solid.svg") no-repeat center 2px;
     background-size: 100%; }
 
 .activeLike {
-  background: url("../../assets/images/like_solid.svg") no-repeat center center;
+  background: url("../../assets/images/like_solid.svg") no-repeat center 2px;
   background-size: 100%; }
 
 #menuToggle {
@@ -1064,7 +1121,8 @@ ul {
   .subscribeWrapper {
     margin-top: 40px;
     padding: 10px;
-    min-height: auto; }
+    min-height: auto;
+    background-size: 125%; }
   .subscribeWrapper .subscribeForm {
     margin-top: 10px; }
   .subscribeWrapper .subscribeEmail {

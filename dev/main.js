@@ -17,6 +17,7 @@ $(document).ready(function () {
     elements.$menuToggle = $('#menuToggle');
     elements.$menu = $('#menu');
     elements.$starWrapper = $('.starWrapper');
+    elements.$individuslInput = $('.individuslInput');
     elements.$body = $('body');
 
     var personeQt = 1;
@@ -88,6 +89,16 @@ $(document).ready(function () {
         });
     }
 
+    function changeGroup() {
+        if ($('.individuslInput').prop('checked')) {
+            $('.individualCheck').removeClass('active');
+            $('.groupCheck').addClass('active');
+        } else {
+            $('.individualCheck').addClass('active');
+            $('.groupCheck').removeClass('active');
+        }
+    }
+
     // init lb
     elements.$selectLocation.nSelect();
 
@@ -115,6 +126,8 @@ $(document).ready(function () {
 
     elements.$personeMinuse.on('click', minusePersone);
     elements.$personePlus.on('click', plusPersone);
+    elements.$individuslInput.on('change', changeGroup);
+
     elements.$body.on('click', showeHideDropDown);
     elements.$like.on('click', toggleLike);
     elements.$aboutUsreadMore.on('click', showMoreAboutUs);
