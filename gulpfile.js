@@ -7,7 +7,7 @@ const del = require('del');
 const babel = require('gulp-babel');
 
 gulp.task('sass', function () {
-    return gulp.src('./style/scss/*.scss')
+    return gulp.src('./style/scss/main.scss')
         .pipe(sass().on('error', sass.logError))
         .pipe(gulp.dest('./style/css'));
 });
