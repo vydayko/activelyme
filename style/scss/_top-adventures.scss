@@ -10,6 +10,12 @@
             height: 180px;
             display: flex;
             justify-content: space-between;
+            .price {
+                font-weight: 600
+            }
+            .like, .activeLike{
+                background-position: 10px 3px!important;
+            }
         }
         .bottomWrapper {
             height: 96px;
@@ -18,14 +24,18 @@
             padding: 10px;
             .tourType {
                 padding: 0;
+                font-size: 10px;
             }
             .tourCity {
-                font-size: 20px;
+                font-size: 15px;
                 padding: 0;
+                font-weight: 600;
+                padding: 5px 0px;
             }
             .tourLocation {
-                background: url(../../assets/images/location_pin_blk.svg) no-repeat 0px center;
-                background-size: 18px;
+                background: url(../../assets/images/location_pin.svg) no-repeat 0px center;
+                background-size: 14px;
+                font-size: 14px;
             }
             .ratingLocation {
                 display: flex;
@@ -73,7 +83,7 @@
             }
             .wrapperHellper {
                 &:hover {
-                    box-shadow: 0px 20px 104px -12px rgba(0, 0, 0, 0.75);
+                    box-shadow: 0px 10px 60px -12px rgba(0, 0, 0, 0.35); 
                 }
             }
         }

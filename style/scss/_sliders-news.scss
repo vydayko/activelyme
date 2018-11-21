@@ -10,7 +10,7 @@
         position: absolute;
         z-index: 999;
         right: 0;
-        bottom: 10px;
+        bottom: 26px;
         border: none;
         background: none;
         height: 20px;
@@ -18,18 +18,18 @@
         font-size: 0;
     }
     .slick-prev {
-        right: 90px;
+        right: 105px;
         background-size: 100%;
         background-image: url('../../assets/images/arrow_left_icon.svg');
         background-repeat: no-repeat;
         background-position: center;
     }
     .slick-next {
-        right: 44px;
+        right: 30px;
         background-size: 100%;
         background-image: url('../../assets/images/arrow_icon_long.svg');
         background-repeat: no-repeat;
-        width: 35px;
+        width: 44px;
         background-position: center;
     }
     .sliderItemsWrapper {
@@ -63,19 +63,24 @@
         }
     }
     .sliderDesc {
+        color: #666666;
         display: flex;
         padding: 40px;
         flex-direction: column;
         .tourLocation {
-            background: url('../../assets/images/location_pin_blk.svg')no-repeat 0px center;
+            background: url('../../assets/images/location_pin.svg')no-repeat 0px center;
             background-size: 18px;
             margin-bottom: 15px;
         }
         .desc {
             padding-bottom: 30px;
         }
+        .tourCity {
+            color: #333333;
+        }
         a {
             text-transform: uppercase;
+            font-size: 14px;
         }
     }
     .sliderNewsDots {
@@ -88,10 +93,10 @@
             button {
                 background: none;
                 border: 1px solid #fff;
-                height: 12px;
                 border-radius: 50%;
                 font-size: 0;
                 margin: 5px;
+                padding: 4px;
             }
         }
         .slick-active {

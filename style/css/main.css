@@ -139,7 +139,7 @@ header {
       height: 60px;
       display: block; }
     .slider .searchPanel .locationIcon {
-      background: url("../../assets/images/location_pin_blk.svg") no-repeat center center;
+      background: url("../../assets/images/location_pin.svg") no-repeat center center;
       background-size: 40%; }
     .slider .searchPanel .calendarIcon {
       background: url("../../assets/images/calendar.svg") no-repeat center center;
@@ -266,7 +266,7 @@ header {
       flex-direction: column; }
     .tourСards .container .cardsList .tourСards .tourWrapper .price {
       font-size: 26px;
-      font-weight: 500; }
+      font-weight: 600; }
   .tourСards .container .cardsList .tourСards:nth-child(1) .tourWrapper {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 69%, rgba(0, 0, 0, 0.6) 100%), url("../../assets/images/mountain1.jpg") no-repeat center center;
     background-size: cover; }
@@ -288,24 +288,24 @@ header {
     position: absolute;
     z-index: 999;
     right: 0;
-    bottom: 10px;
+    bottom: 26px;
     border: none;
     background: none;
     height: 20px;
     width: 20px;
     font-size: 0; }
   .topNewsOfWeek .slick-prev {
-    right: 90px;
+    right: 105px;
     background-size: 100%;
     background-image: url("../../assets/images/arrow_left_icon.svg");
     background-repeat: no-repeat;
     background-position: center; }
   .topNewsOfWeek .slick-next {
-    right: 44px;
+    right: 30px;
     background-size: 100%;
     background-image: url("../../assets/images/arrow_icon_long.svg");
     background-repeat: no-repeat;
-    width: 35px;
+    width: 44px;
     background-position: center; }
   .topNewsOfWeek .sliderItemsWrapper {
     display: flex;
@@ -333,17 +333,21 @@ header {
       color: #fff;
       font-size: 14px; }
   .topNewsOfWeek .sliderDesc {
+    color: #666666;
     display: flex;
     padding: 40px;
     flex-direction: column; }
     .topNewsOfWeek .sliderDesc .tourLocation {
-      background: url("../../assets/images/location_pin_blk.svg") no-repeat 0px center;
+      background: url("../../assets/images/location_pin.svg") no-repeat 0px center;
       background-size: 18px;
       margin-bottom: 15px; }
     .topNewsOfWeek .sliderDesc .desc {
       padding-bottom: 30px; }
+    .topNewsOfWeek .sliderDesc .tourCity {
+      color: #333333; }
     .topNewsOfWeek .sliderDesc a {
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: 14px; }
   .topNewsOfWeek .sliderNewsDots {
     position: absolute;
     bottom: 40px;
@@ -353,10 +357,10 @@ header {
     .topNewsOfWeek .sliderNewsDots li button {
       background: none;
       border: 1px solid #fff;
-      height: 12px;
       border-radius: 50%;
       font-size: 0;
-      margin: 5px; }
+      margin: 5px;
+      padding: 4px; }
     .topNewsOfWeek .sliderNewsDots .slick-active button {
       background: #fff; }
 
@@ -370,6 +374,10 @@ header {
   height: 180px;
   display: flex;
   justify-content: space-between; }
+  .popularAdv .popularAdventures .topWrapper .price {
+    font-weight: 600; }
+  .popularAdv .popularAdventures .topWrapper .like, .popularAdv .popularAdventures .topWrapper .activeLike {
+    background-position: 10px 3px !important; }
 
 .popularAdv .popularAdventures .bottomWrapper {
   height: 96px;
@@ -377,13 +385,17 @@ header {
   flex-direction: column;
   padding: 10px; }
   .popularAdv .popularAdventures .bottomWrapper .tourType {
-    padding: 0; }
+    padding: 0;
+    font-size: 10px; }
   .popularAdv .popularAdventures .bottomWrapper .tourCity {
-    font-size: 20px;
-    padding: 0; }
+    font-size: 15px;
+    padding: 0;
+    font-weight: 600;
+    padding: 5px 0px; }
   .popularAdv .popularAdventures .bottomWrapper .tourLocation {
-    background: url(../../assets/images/location_pin_blk.svg) no-repeat 0px center;
-    background-size: 18px; }
+    background: url(../../assets/images/location_pin.svg) no-repeat 0px center;
+    background-size: 14px;
+    font-size: 14px; }
   .popularAdv .popularAdventures .bottomWrapper .ratingLocation {
     display: flex;
     align-items: center;
@@ -412,7 +424,7 @@ header {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(255, 255, 255, 0) 39%, rgba(255, 255, 255, 0) 69%, rgba(0, 0, 0, 0.6) 100%), url("../../assets/images/mountain1.jpg") no-repeat center center;
     background-size: cover; }
   .popularAdv .popularAdventures .tAWrapper .wrapperHellper:hover {
-    box-shadow: 0px 20px 104px -12px rgba(0, 0, 0, 0.75); }
+    box-shadow: 0px 10px 60px -12px rgba(0, 0, 0, 0.35); }
 
 .aboutUs .containerTitle {
   margin-top: 80px; }
@@ -424,11 +436,11 @@ header {
   display: flex;
   flex-direction: column;
   border-radius: 0 0 4px 4px;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05);
-  padding-bottom: 60px; }
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.05); }
 
 .aboutUs .aboutUsItem {
-  width: 50%; }
+  width: 50%;
+  color: #666666; }
 
 .aboutUs .aboutUsImg {
   object-fit: cover;
@@ -496,6 +508,7 @@ header {
     justify-content: center;
     cursor: pointer;
     border: none;
+    font-weight: 600;
     min-width: 170px;
     padding-left: 30px;
     text-align: left;
@@ -868,10 +881,11 @@ ul {
 
 .tourCity {
   font-size: 30px;
-  padding-bottom: 5px; }
+  padding-bottom: 5px;
+  font-weight: 600; }
 
 .tourLocation {
-  background: url("../../assets/images/location_pin_card.svg") no-repeat 0px center;
+  background: url("../../assets/images/location_pin.svg") no-repeat 0px center;
   background-size: 18px;
   font-size: 16px;
   padding-left: 26px;
@@ -895,20 +909,20 @@ ul {
   .containerTitle a {
     color: #666;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 600;
     padding-right: 52px;
     background: url("../../assets/images/title-right-arrow.svg") no-repeat 70px center;
-    background-size: 25px; }
+    background-size: 27px; }
 
 .like {
-  background: url("../../assets/images/like_outline.svg") no-repeat center 2px;
+  background: url("../../assets/images/like_outline.svg") no-repeat 10px 3px;
   background-size: 100%;
   display: block;
   width: 45px;
   height: 39px;
   cursor: pointer; }
   .like:hover {
-    background: url("../../assets/images/like_solid.svg") no-repeat center 2px;
+    background: url("../../assets/images/like_solid.svg") no-repeat 10px 3px;
     background-size: 100%; }
 
 #menuToggle {
@@ -1093,5 +1107,5 @@ ul {
     padding-right: 220px; } }
 
 .activeLike {
-  background: url("../../assets/images/like_solid.svg") no-repeat center 2px !important;
+  background: url("../../assets/images/like_solid.svg") no-repeat 10px 3px;
   background-size: 100%; }
